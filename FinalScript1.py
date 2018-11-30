@@ -5,7 +5,7 @@ from androguard.core.bytecodes import apk, dvm
 from androguard.core.analysis import analysis
 from androguard.decompiler.dad import decompile
 from androguard.core.bytecodes.dvm import DalvikVMFormat
-from androguard.core.bytecodes.apk import APK
+from androguard.core.bytecodes.apk import *
 from androguard.core.analysis.analysis import uVMAnalysis
 from androguard.core.analysis.ganalysis import GVMAnalysis
 
@@ -371,6 +371,51 @@ def _parseargs():
 
 	return args
 
+def _findPerm(perms):
+	#print (perms)
+	print("Suspicious Permission Use:")
+	none = True
+	for x in perms:
+		if (x.find('READ_CONTACTS') != -1):
+			print("READ_CONTACTS permission used")
+			none = False
+		if (x.find('READ_CALENDAR') != -1):
+			print("READ_CALENDAR permission used")
+			none = False
+		if (x.find('RECORD_AUDIO') != -1):
+			print("RECORD_AUDIO permission used")
+			none = False
+	if (none):
+		print("No suspicious permissions in use")
+def _intentFilters(_a):
+#should add which component is exported eventually
+	activities = _a.get_activities()
+	for x in activities:
+		intent = _a.get_intent_filters("activity", x)
+		
+		if (len(intent) > 0):
+			for i in intent['category']:				
+				if(i.find('DEFAULT') or i.find('EXPORTED')):
+					print(" Exported activity intent filter")
+	activities = _a.get_services()
+	for x in activities:
+		intent = _a.get_intent_filters("service", x)
+		
+		if (len(intent) > 0):
+			for i in intent['category']:				
+				if(i.find('DEFAULT') or i.find('EXPORTED')):
+					print(" Exported service intent filter")
+	activities = _a.get_receivers()
+	for x in activities:
+		intent = _a.get_intent_filters("receiver", x)
+		
+		if (len(intent) > 0):
+			for i in intent['category']:				
+				if(i.find('DEFAULT') or i.find('EXPORTED')):
+					print(" Exported receiver intent filter")	
+#print(_a.get_services())
+	#print(_a.get_receivers())
+
 def main():
 
 	_args = _parseargs()
@@ -378,7 +423,21 @@ def main():
 	_a = apk.APK(_args.file)
 	print("Analyse file: {:s}".format(_args.file))
 	print("Package name: {:s}".format(_a.get_package()))
+	print(_a.get_app_name())
 
+	#for research question 3
+	_findPerm(_a.get_permissions())
+	
+	#for research question 8
+	_intentFilters(_a)
+	
+
+	
+
+	
+
+	
+"""
 	_vm = dvm.DalvikVMFormat(_a.get_dex())
 	_vmx = uVMAnalysis(_vm)
 
@@ -406,6 +465,6 @@ def main():
 			_store_java(_vm, _args)
 	else:
 		print "App does not require INTERNET permission. No need to worry about SSL misuse... Abort!"
-
+"""
 if __name__ == "__main__":
 	main()
