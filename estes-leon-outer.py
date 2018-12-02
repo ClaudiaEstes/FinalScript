@@ -1,6 +1,16 @@
 import string, sys , os, subprocess
 
 
+def createOutput():
+    incorrectly_verifies_hostnames = []
+    incorrectly_verifies_cerficates = []
+    uses_ssl_pinning = []
+    implements_implict_intents = []
+    uses_dangerous_permissions = []
+    
+    f= open("app_anaylsis.txt", "w")
+    
+
 def runAnalysis(apks):
     for a in apks:
         subprocess.call([ "FirstScript1.py", "-f", a, "-x"])
