@@ -396,27 +396,27 @@ def _intentFilters(_a):
 	activities = _a.get_activities()
 	for x in activities:
 		intent = _a.get_intent_filters("activity", x)
-		
+
 		if (len(intent) > 0):
-			for i in intent['category']:				
+			for i in intent['category']:
 				if(i.find('DEFAULT') or i.find('EXPORTED')):
 					print(" Exported activity intent filter")
 	activities = _a.get_services()
 	for x in activities:
 		intent = _a.get_intent_filters("service", x)
-		
+
 		if (len(intent) > 0):
-			for i in intent['category']:				
+			for i in intent['category']:
 				if(i.find('DEFAULT') or i.find('EXPORTED')):
 					print(" Exported service intent filter")
 	activities = _a.get_receivers()
 	for x in activities:
 		intent = _a.get_intent_filters("receiver", x)
-		
+
 		if (len(intent) > 0):
-			for i in intent['category']:				
+			for i in intent['category']:
 				if(i.find('DEFAULT') or i.find('EXPORTED')):
-					print(" Exported receiver intent filter")	
+					print(" Exported receiver intent filter")
 #print(_a.get_services())
 	#print(_a.get_receivers())
 
@@ -427,13 +427,14 @@ def main():
 	_a = apk.APK(_args.file)
 	print("Analyse file: {:s}".format(_args.file))
 	print("Package name: {:s}".format(_a.get_package()))
-	print(_a.get_app_name())
+	name = _a.get_app_name()
+	#f = Open(name+".txt", "w")
 
 	#for research question 3
 	_findPerm(_a.get_permissions())
-	
+
 	#for research question 8
-	#_intentFilters(_a)
+	_intentFilters(_a)
 	
 	_vm = dvm.DalvikVMFormat(_a.get_dex())
 	_vmx = Analysis(_vm)
@@ -447,6 +448,10 @@ def main():
 	_custom_on_received_ssl_error = []
 	
 	_java=True
+	
+	_vm = dvm.DalvikVMFormat(_a.get_dex())
+	_vmx = uVMAnalysis(_vm)
+
 
 	for _method in _vm.get_methods():
 		_hv, _a = _check_hostname_verifier(_method, _vm, _vmx)
