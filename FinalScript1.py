@@ -19,7 +19,7 @@ import argparse
 def _get_java_code(_class, _vmx):
 	try:
 		_ms = decompile.DvClass(_class, _vmx)
-		print ( _ms.get_source(), "\n")
+		#print ( _ms.get_source(), "\n")
 		_ms.process()
 		return _ms.get_source()
 	except :
@@ -250,7 +250,6 @@ def _print_result(_result, _java=True):
 		if _java: 
 			print("\t\tJavaSource code:" )
 			print("{:s}".format(base64.b64decode(_aa['java_b64'])))
-
 def _xml_result(_a, _result):
 	from xml.etree.ElementTree import Element, SubElement, tostring, dump
 	import xml.dom.minidom
@@ -360,7 +359,7 @@ def _store_java(_vm, _args):
 			_ensure_dir(_f)
 			with open(_f, "w") as f:
 				_java = str(_ms.get_source())
-				f.write(_java)
+				print(_java)
 		except:
 			print("Could not process {:s}: {:s}".format(_class.get_name(), str(e)))
 
@@ -374,24 +373,88 @@ def _parseargs():
 	args = parser.parse_args()
 
 	return args
+def printResults(_custom_trust_manager, _insecure_socket_factory, 
+	             _custom_hostname_verifier,
+	             _allow_all_hostname_verifier,
+	             _custom_on_received_ssl_error, _java, f):
+	if len(_custom_trust_manager) > 0:
+		if len(_custom_trust_manager) == 1:
+			f.write("App implements custom TrustManager: \n")
+		elif len(_custom_trust_manager) > 1:
+			f.write("App implements {:d} custom TrustManagers".format(len(_custom_trust_manager)) + "\n" )	
+	for _tm in _custom_trust_manager:
+			_class_name = _tm['class'].get_name()
+			f.write("\tCustom TrustManager is implemented in class {:s}".format(_translate_class_name(_class_name)) + "\n")
+			if _tm['empty']:
+				f.write("\tImplements naive certificate check. This TrustManager breaks certificate validation! \n")
+			if ( _tm['xref'] != None):
+				for _ref in _tm['xref']:
+					f.write("\t\tReferenced in method {:s}->{:s}".format(_translate_class_name(_ref.get_class_name()), _ref.get_name()), + "\n")
+			if _java:
+				f.write("\t\tJavaSource code:")
+				#print("{:s}".format(_tm['java_b64']) )	
+	if len(_insecure_socket_factory) > 0:
+		if len(_insecure_socket_factory) == 1:
+			f.write("App instantiates insecure SSLSocketFactory: \n")
+		elif len(_insecure_socket_factory) > 1:
+			f.write("App instantiates {:d} insecure SSLSocketFactorys".format(len(_insecure_socket_factory))+ "\n" )
 
-def _findPerm(perms):
+		for _is in _insecure_socket_factory:
+			_class_name = _translate_class_name(_is['class'].get_name())
+			f.write("\tInsecure SSLSocketFactory is instantiated in {:s}->{:s}".format(_class_name, _is['method'].get_name())+ "\n" )
+			if _java:
+				f.write("\t\tJavaSource code: \n")
+				#print("{:s}".format(_is['java_b64']) )
+
+	if len(_custom_hostname_verifier) > 0:
+		if len(_custom_hostname_verifier) == 1:
+			f.write("App implements custom HostnameVerifier:")
+		elif len(_custom_hostname_verifier) > 1:
+			f.write("App implements {:d} custom HostnameVerifiers".format(len(_result['customhostnameverifier']))  + "\n")
+
+		for _hv in _custom_hostname_verifier:
+			_class_name = _hv['class'].get_name()
+			f.write("\tCustom HostnameVerifiers is implemented in class {:s}".format(_translate_class_name(_class_name)) +"\n")
+			if _hv['empty']:
+				f.write("\tImplements naive hostname verification. This HostnameVerifier breaks certificate validation! \n")
+			for _ref in _tm['xref']:
+				f.write("\t\tReferenced in method {:s}->{:s}".format(_translate_class_name(_ref.get_class_name()), _ref.get_name())+  "\n")
+			if _java:
+				f.write("\t\tJavaSource code: \n" )
+				#print("{:s}".format(_hv['java_b64']) )
+
+	if len(_allow_all_hostname_verifier) > 0:
+		if len(_allow_all_hostname_verifier) == 1:
+			f.write("App instantiates AllowAllHostnameVerifier: \n" )
+		elif len(_allow_all_hostname_verifier) > 1:
+			f.write("App instantiates {:d} AllowAllHostnameVerifiers".format(len(_allow_all_hostname_verifier))  + "\n")
+
+		for _aa in _allow_all_hostname_verifier:
+			_class_name = _translate_class_name(_aa['class'].get_name())
+			f.write("\tAllowAllHostnameVerifier is instantiated in {:s}->{:s}".format(_class_name, _aa['method'].get_name()) + "\n" )
+		if _java: 
+			
+			f.write("\t\tJavaSource code: \n" )
+			#print("{:s}".format(_aa['java_b64']))	
+	
+
+def _findPerm(perms,f):
 	#print((perms)
-	print("Suspicious Permission Use:")
+	f.write("Suspicious Permission Use: \n")
 	none = True
 	for x in perms:
 		if (x.find('READ_CONTACTS') != -1):
-			print("READ_CONTACTS permission used")
+			f.write("READ_CONTACTS permission used \"")
 			none = False
 		if (x.find('READ_CALENDAR') != -1):
-			print("READ_CALENDAR permission used")
+			f.write("READ_CALENDAR permission used \n")
 			none = False
 		if (x.find('RECORD_AUDIO') != -1):
-			print("RECORD_AUDIO permission used")
+			print("RECORD_AUDIO permission used  \n")
 			none = False
 	if (none):
-		print("No suspicious permissions in use")
-def _intentFilters(_a):
+		f.write("No suspicious permissions in use \n")
+def _intentFilters(_a,f):
 #should add which component is exported eventually
 	activities = _a.get_activities()
 	for x in activities:
@@ -400,7 +463,7 @@ def _intentFilters(_a):
 		if (len(intent) > 0):
 			for i in intent['category']:
 				if(i.find('DEFAULT') or i.find('EXPORTED')):
-					print(" Exported activity intent filter")
+					f.write(" Exported activity intent filter \n")
 	activities = _a.get_services()
 	for x in activities:
 		intent = _a.get_intent_filters("service", x)
@@ -408,7 +471,7 @@ def _intentFilters(_a):
 		if (len(intent) > 0):
 			for i in intent['category']:
 				if(i.find('DEFAULT') or i.find('EXPORTED')):
-					print(" Exported service intent filter")
+					f.write(" Exported service intent filter \n")
 	activities = _a.get_receivers()
 	for x in activities:
 		intent = _a.get_intent_filters("receiver", x)
@@ -416,7 +479,7 @@ def _intentFilters(_a):
 		if (len(intent) > 0):
 			for i in intent['category']:
 				if(i.find('DEFAULT') or i.find('EXPORTED')):
-					print(" Exported receiver intent filter")
+					f.write(" Exported receiver intent filter \n")
 #print(_a.get_services())
 	#print(_a.get_receivers())
 
@@ -425,16 +488,17 @@ def main():
 	_args = _parseargs()
 
 	_a = apk.APK(_args.file)
-	print("Analyse file: {:s}".format(_args.file))
-	print("Package name: {:s}".format(_a.get_package()))
 	name = _a.get_app_name()
-	#f = Open(name+".txt", "w")
+	f = open(name+".txt", "w")
+	f.write("Analyse file: {:s}".format(_args.file) + "\n")
+	f.write("Package name: {:s}".format(_a.get_package())+ "\n")
+
 
 	#for research question 3
-	_findPerm(_a.get_permissions())
+	_findPerm(_a.get_permissions(), f)
 
 	#for research question 8
-	_intentFilters(_a)
+	#_intentFilters(_a, f)
 	
 	_vm = dvm.DalvikVMFormat(_a.get_dex())
 	_vmx = Analysis(_vm)
@@ -450,7 +514,8 @@ def main():
 	_java=True
 	
 	_vm = dvm.DalvikVMFormat(_a.get_dex())
-	_vmx = uVMAnalysis(_vm)
+	_vmx = Analysis(_vm)
+
 
 
 	for _method in _vm.get_methods():
@@ -467,64 +532,13 @@ def main():
 		_ssl = _check_ssl_error(_method, _vm, _vmx)
 		if len(_ssl) > 0:
 			_custom_on_received_ssl_error += _ssl
-	if len(_custom_trust_manager) > 0:
-		if len(_custom_trust_manager) == 1:
-			print("App implements custom TrustManager:")
-		elif len(_custom_trust_manager) > 1:
-			print("App implements {:d} custom TrustManagers".format(len(_custom_trust_manager)) )	
-	for _tm in _custom_trust_manager:
-			_class_name = _tm['class'].get_name()
-			print("\tCustom TrustManager is implemented in class {:s}".format(_translate_class_name(_class_name)))
-			if _tm['empty']:
-				print("\tImplements naive certificate check. This TrustManager breaks certificate validation!")
-			if ( _tm['xref'] != None):
-				for _ref in _tm['xref']:
-					print("\t\tReferenced in method {:s}->{:s}".format(_translate_class_name(_ref.get_class_name()), _ref.get_name()))
-			if _java:
-				print("\t\tJavaSource code:")
-				print("{:s}".format(_tm['java_b64']) )	
-	if len(_insecure_socket_factory) > 0:
-		if len(_insecure_socket_factory) == 1:
-			print("App instantiates insecure SSLSocketFactory:")
-		elif len(_insecure_socket_factory) > 1:
-			print("App instantiates {:d} insecure SSLSocketFactorys".format(len(_insecure_socket_factory)) )
-
-		for _is in _insecure_socket_factory:
-			_class_name = _translate_class_name(_is['class'].get_name())
-			print("\tInsecure SSLSocketFactory is instantiated in {:s}->{:s}".format(_class_name, _is['method'].get_name()) )
-			if _java:
-				print("\t\tJavaSource code:")
-				print("{:s}".format(_is['java_b64']) )
-
-	if len(_custom_hostname_verifier) > 0:
-		if len(_custom_hostname_verifier) == 1:
-			print("App implements custom HostnameVerifier:")
-		elif len(_custom_hostname_verifier) > 1:
-			print("App implements {:d} custom HostnameVerifiers".format(len(_result['customhostnameverifier'])) )
-
-		for _hv in _custom_hostname_verifier:
-			_class_name = _hv['class'].get_name()
-			print("\tCustom HostnameVerifiers is implemented in class {:s}".format(_translate_class_name(_class_name)) )
-			if _hv['empty']:
-				print("\tImplements naive hostname verification. This HostnameVerifier breaks certificate validation!")
-			for _ref in _tm['xref']:
-				print("\t\tReferenced in method {:s}->{:s}".format(_translate_class_name(_ref.get_class_name()), _ref.get_name()) )
-			if _java:
-				print("\t\tJavaSource code:" )
-				print("{:s}".format(_hv['java_b64']) )
-
-	if len(_allow_all_hostname_verifier) > 0:
-		if len(_allow_all_hostname_verifier) == 1:
-			print("App instantiates AllowAllHostnameVerifier:" )
-		elif len(_allow_all_hostname_verifier) > 1:
-			print("App instantiates {:d} AllowAllHostnameVerifiers".format(len(_allow_all_hostname_verifier))  )
-
-		for _aa in _allow_all_hostname_verifier:
-			_class_name = _translate_class_name(_aa['class'].get_name())
-			print("\tAllowAllHostnameVerifier is instantiated in {:s}->{:s}".format(_class_name, _aa['method'].get_name()) )
-		if _java: 
-			print("\t\tJavaSource code:" )
-			print("{:s}".format(_aa['java_b64']))
+			
+	printResults(_custom_trust_manager, _insecure_socket_factory, 
+	             _custom_hostname_verifier,
+	             _allow_all_hostname_verifier,
+	             _custom_on_received_ssl_error, _java, f)
+	f.close()
+	             
 
 
 if __name__ == "__main__":
