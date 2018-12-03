@@ -5,9 +5,9 @@ from androguard.core.bytecodes import apk, dvm
 from androguard.core.analysis import analysis
 from androguard.decompiler.dad import decompile
 from androguard.core.bytecodes.dvm import DalvikVMFormat
-from androguard.core.bytecodes.apk import *
-from androguard.core.analysis.analysis import Analysis
-#from androguard.core.analysis.ganalysis import GVMAnalysis
+from androguard.core.bytecodes.apk import APK
+from androguard.core.analysis.analysis import uVMAnalysis
+from androguard.core.analysis.ganalysis import GVMAnalysis
 
 import sys
 import os
@@ -207,7 +207,7 @@ def _print_result(_result, _java=True):
 			if _java:
 				print("\t\tJavaSource code:")
 				print("{:s}".format(base64.b64decode(_tm['java_b64'])) )
-				      
+
 	if len(_result['insecuresocketfactory']) > 0:
 		if len(_result['insecuresocketfactory']) == 1:
 			print("App instantiates insecure SSLSocketFactory:")
@@ -247,7 +247,7 @@ def _print_result(_result, _java=True):
 		for _aa in _result['allowallhostnameverifier']:
 			_class_name = _translate_class_name(_aa['class'].get_name())
 			print("\tAllowAllHostnameVerifier is instantiated in {:s}->{:s}".format(_class_name, _aa['method'].get_name()) )
-		if _java: 
+		if _java:
 			print("\t\tJavaSource code:" )
 			print("{:s}".format(base64.b64decode(_aa['java_b64'])))
 
@@ -379,46 +379,49 @@ def _findPerm(perms):
 	#print((perms)
 	print("Suspicious Permission Use:")
 	none = True
-	for x in perms:
-		if (x.find('READ_CONTACTS') != -1):
-			print("READ_CONTACTS permission used")
-			none = False
-		if (x.find('READ_CALENDAR') != -1):
-			print("READ_CALENDAR permission used")
-			none = False
-		if (x.find('RECORD_AUDIO') != -1):
-			print("RECORD_AUDIO permission used")
-			none = False
+	if (len(perms)>0):
+		for x in perms:
+			if (x.find('READ_CONTACTS') != -1):
+				print("READ_CONTACTS permission used")
+				none = False
+			if (x.find('READ_CALENDAR') != -1):
+				print("READ_CALENDAR permission used")
+				none = False
+			if (x.find('RECORD_AUDIO') != -1):
+				print("RECORD_AUDIO permission used")
+				none = False
 	if (none):
 		print("No suspicious permissions in use")
 def _intentFilters(_a):
 #should add which component is exported eventually
 	activities = _a.get_activities()
-	for x in activities:
-		intent = _a.get_intent_filters("activity", x)
+	if (len(activities) >0):
+		for x in activities:
+			intent = _a.get_intent_filters("activity", x)
 
-		if (len(intent) > 0):
-			for i in intent['category']:
-				if(i.find('DEFAULT') or i.find('EXPORTED')):
-					print(" Exported activity intent filter")
-	activities = _a.get_services()
-	for x in activities:
-		intent = _a.get_intent_filters("service", x)
+			if (len(intent) > 0 and 'category' in intent.keys()):
+				for i in intent['category']:
+					if(i.find('DEFAULT') or i.find('EXPORTED')):
+						if not(i.find('LAUNCHER')):
+							print(i + " Exported activity intent filter")
+	services = _a.get_services()
+	if (len(services) >0):
+		for x in services:
+			intent = _a.get_intent_filters("service", x)
 
-		if (len(intent) > 0):
-			for i in intent['category']:
-				if(i.find('DEFAULT') or i.find('EXPORTED')):
-					print(" Exported service intent filter")
-	activities = _a.get_receivers()
-	for x in activities:
-		intent = _a.get_intent_filters("receiver", x)
-
-		if (len(intent) > 0):
-			for i in intent['category']:
-				if(i.find('DEFAULT') or i.find('EXPORTED')):
-					print(" Exported receiver intent filter")
-#print(_a.get_services())
-	#print(_a.get_receivers())
+			if (len(intent) > 0 and 'category' in intent.keys()):
+				for i in intent['category']:
+					if(i.find('DEFAULT') or i.find('EXPORTED')):
+						print(i + " Exported service intent filter")
+	recs = _a.get_receivers()
+	if (len(recs) >0):
+		for x in recs:
+			intent = _a.get_intent_filters("receiver", x)
+			#print(intent)
+			if (len(intent) > 0 and 'category' in intent.keys()):
+				for i in intent['category']:
+					if(i.find('DEFAULT') or i.find('EXPORTED')):
+						print(i + " Exported receiver intent filter")
 
 def main():
 
@@ -435,10 +438,10 @@ def main():
 
 	#for research question 8
 	_intentFilters(_a)
-	
+
 	_vm = dvm.DalvikVMFormat(_a.get_dex())
-	_vmx = Analysis(_vm)
-	
+	_vmx = uVMAnalysis(_vm)
+
 	_custom_trust_manager = []
 	_insecure_socket_factory = []
 
@@ -446,11 +449,9 @@ def main():
 	_allow_all_hostname_verifier = []
 
 	_custom_on_received_ssl_error = []
-	
+
 	_java=True
-	
-	_vm = dvm.DalvikVMFormat(_a.get_dex())
-	_vmx = uVMAnalysis(_vm)
+
 
 
 	for _method in _vm.get_methods():
@@ -471,7 +472,7 @@ def main():
 		if len(_custom_trust_manager) == 1:
 			print("App implements custom TrustManager:")
 		elif len(_custom_trust_manager) > 1:
-			print("App implements {:d} custom TrustManagers".format(len(_custom_trust_manager)) )	
+			print("App implements {:d} custom TrustManagers".format(len(_custom_trust_manager)) )
 	for _tm in _custom_trust_manager:
 			_class_name = _tm['class'].get_name()
 			print("\tCustom TrustManager is implemented in class {:s}".format(_translate_class_name(_class_name)))
@@ -482,7 +483,7 @@ def main():
 					print("\t\tReferenced in method {:s}->{:s}".format(_translate_class_name(_ref.get_class_name()), _ref.get_name()))
 			if _java:
 				print("\t\tJavaSource code:")
-				print("{:s}".format(_tm['java_b64']) )	
+				print("{:s}".format(_tm['java_b64']) )
 	if len(_insecure_socket_factory) > 0:
 		if len(_insecure_socket_factory) == 1:
 			print("App instantiates insecure SSLSocketFactory:")
@@ -522,9 +523,10 @@ def main():
 		for _aa in _allow_all_hostname_verifier:
 			_class_name = _translate_class_name(_aa['class'].get_name())
 			print("\tAllowAllHostnameVerifier is instantiated in {:s}->{:s}".format(_class_name, _aa['method'].get_name()) )
-		if _java: 
+		if _java:
 			print("\t\tJavaSource code:" )
 			print("{:s}".format(_aa['java_b64']))
+
 
 
 if __name__ == "__main__":
