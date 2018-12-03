@@ -6,8 +6,9 @@ from androguard.core.analysis import analysis
 from androguard.decompiler.dad import decompile
 from androguard.core.bytecodes.dvm import DalvikVMFormat
 from androguard.core.bytecodes.apk import APK
-from androguard.core.analysis.analysis import uVMAnalysis
-from androguard.core.analysis.ganalysis import GVMAnalysis
+#from androguard.core.analysis.analysis import uVMAnalysis
+from androguard.core.analysis.analysis import Analysis
+#from androguard.core.analysis.ganalysis import GVMAnalysis
 
 import sys
 import os
@@ -445,13 +446,13 @@ def _findPerm(perms,f):
 	if (len(perms)>0):
 		for x in perms:
 			if (x.find('READ_CONTACTS') != -1):
-				print("READ_CONTACTS permission used \n")
+				f.write("READ_CONTACTS permission used \n")
 				none = False
 			if (x.find('READ_CALENDAR') != -1):
-				print("READ_CALENDAR permission used \n")
+				f.write("READ_CALENDAR permission used \n")
 				none = False
 			if (x.find('RECORD_AUDIO') != -1):
-				print("RECORD_AUDIO permission used \n")
+				f.write("RECORD_AUDIO permission used \n")
 				none = False
 	if (none):
 		f.write("No suspicious permissions in use \n")
@@ -466,7 +467,7 @@ def _intentFilters(_a,f):
 				for i in intent['category']:
 					if(i.find('DEFAULT') or i.find('EXPORTED')):
 						if not(i.find('LAUNCHER')):
-							print(i + " Exported activity intent filter \n")
+							f.write(i + " Exported activity intent filter \n")
 	services = _a.get_services()
 	if (len(services) >0):
 		for x in services:
@@ -475,7 +476,7 @@ def _intentFilters(_a,f):
 			if (len(intent) > 0 and 'category' in intent.keys()):
 				for i in intent['category']:
 					if(i.find('DEFAULT') or i.find('EXPORTED')):
-						print(i + " Exported service intent filter \n")
+						f.write(i + " Exported service intent filter \n")
 	recs = _a.get_receivers()
 	if (len(recs) >0):
 		for x in recs:
@@ -484,7 +485,7 @@ def _intentFilters(_a,f):
 			if (len(intent) > 0 and 'category' in intent.keys()):
 				for i in intent['category']:
 					if(i.find('DEFAULT') or i.find('EXPORTED')):
-						print(i + " Exported receiver intent filter \n")
+						f.write(i + " Exported receiver intent filter \n")
 
 
 def main():
