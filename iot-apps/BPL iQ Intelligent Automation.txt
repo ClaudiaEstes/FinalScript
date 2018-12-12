@@ -1,0 +1,9 @@
+-------------------RESULTS-------------- 
+Analyze file: com.bpl.homecenter.ui.apk
+Package name: com.bpl.homecenter.ui
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+READ_CONTACTS permission used 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLorg/apache/commons/net/ftp/FTPSTrustManager;checkServerTrustedLorg/apache/commons/net/ftp/FTPSTrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0xe3ef0Ljava/lang/Object;->Lorg/apache/commons/net/ftp/FTPSTrustManager;

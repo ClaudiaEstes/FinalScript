@@ -1,0 +1,17 @@
+-------------------RESULTS-------------- 
+Analyze file: com.nokia.dhbu.smartHome.apk
+Package name: com.nokia.dhbu.smartHome
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+com.nokia.dhbu.smartHome Exported receiver intent filter 
+App ignores ssl error: 
+	Custom ssl error handler inonReceivedSslErrorLorg/apache/cordova/inappbrowser/InAppBrowser$InAppBrowserClient;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0x143bf4Landroid/webkit/WebViewClient;->Lorg/apache/cordova/inappbrowser/InAppBrowser$InAppBrowserClient;
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/github/kevinsawicki/http/HttpRequest$1;checkServerTrustedLcom/github/kevinsawicki/http/HttpRequest$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x101bc4Ljava/lang/Object;->Lcom/github/kevinsawicki/http/HttpRequest$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLorg/apache/cordova/filetransfer/FileTransfer$3;checkServerTrustedLorg/apache/cordova/filetransfer/FileTransfer$3;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x1409ecLjava/lang/Object;->Lorg/apache/cordova/filetransfer/FileTransfer$3;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLorg/eclipse/jetty/util/ssl/SslContextFactory$1;checkServerTrustedLorg/eclipse/jetty/util/ssl/SslContextFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x147ce8Ljava/lang/Object;->Lorg/eclipse/jetty/util/ssl/SslContextFactory$1;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/github/kevinsawicki/http/HttpRequest$2;Lcom/github/kevinsawicki/http/HttpRequest$2;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x101c08Ljava/lang/Object;->Lcom/github/kevinsawicki/http/HttpRequest$2;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLorg/apache/cordova/filetransfer/FileTransfer$2;Lorg/apache/cordova/filetransfer/FileTransfer$2;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x1409acLjava/lang/Object;->Lorg/apache/cordova/filetransfer/FileTransfer$2;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

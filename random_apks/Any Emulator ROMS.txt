@@ -1,0 +1,6 @@
+Analyze file: com.ga.anyemulatorgame.apk
+Package name: com.ga.anyemulatorgame
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 

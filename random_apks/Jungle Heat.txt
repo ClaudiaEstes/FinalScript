@@ -1,0 +1,15 @@
+Analyze file: ru.mail.games.android.JungleHeat.apk
+Package name: ru.mail.games.android.JungleHeat
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated ingetClientLjava/lang/Object;->Lcom/sponsorpay/sdk/android/utils/SPHttpClient;Lcom/sponsorpay/sdk/android/utils/SPHttpClient;->getClient()Lorg/apache/http/client/HttpClient; [access_flags=private] @ 0xcad08
+	AllowAllHostnameVerifier is instantiated insslClientLjava/lang/Object;->Lru/mail/mrgservice/MRGSRestClient;Lru/mail/mrgservice/MRGSRestClient;->sslClient(Lorg/apache/http/client/HttpClient;)Lorg/apache/http/client/HttpClient; [access_flags=private] @ 0xf5258
+App ignores ssl error: 
+	Custom ssl error handler inonReceivedSslErrorLcom/sponsorpay/sdk/android/publisher/OfferWebClient;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0xc8224Landroid/webkit/WebViewClient;->Lcom/sponsorpay/sdk/android/publisher/OfferWebClient;
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/sponsorpay/sdk/android/utils/SPSSLSocketFactory$1;checkServerTrustedLcom/sponsorpay/sdk/android/utils/SPSSLSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0xcaf74Ljava/lang/Object;->Lcom/sponsorpay/sdk/android/utils/SPSSLSocketFactory$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLru/mail/mrgservice/MRGSRestClient$1;checkServerTrustedLru/mail/mrgservice/MRGSRestClient$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0xf4e54Ljava/lang/Object;->Lru/mail/mrgservice/MRGSRestClient$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLru/mail/mrgservice/MRGSSSLSocketFactory$1;checkServerTrustedLru/mail/mrgservice/MRGSSSLSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0xf56e8Ljava/lang/Object;->Lru/mail/mrgservice/MRGSSSLSocketFactory$1;

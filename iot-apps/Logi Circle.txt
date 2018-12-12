@@ -1,0 +1,9 @@
+-------------------RESULTS-------------- 
+Analyze file: com.logitech.circle.apk
+Package name: com.logitech.circle
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+com.example.gcm Exported receiver intent filter 
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/c/a/a/c/b;Lcom/c/a/a/c/b;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x20450cLjava/lang/Object;->Lcom/c/a/a/c/b;

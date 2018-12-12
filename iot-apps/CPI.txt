@@ -1,0 +1,18 @@
+-------------------RESULTS-------------- 
+Analyze file: com.alarm.alarmmobile.android.cpi.apk
+Package name: com.alarm.alarmmobile.android.cpi
+ 
+Suspicious Permission Use: 
+READ_CONTACTS permission used 
+RECORD_AUDIO permission used 
+com.alarm.alarmmobile.android.cpi Exported receiver intent filter 
+App ignores ssl error: 
+	Custom ssl error handler inonReceivedSslErrorLcom/alarm/alarmmobile/android/util/AlarmWebViewClient;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0x321270Landroid/webkit/WebViewClient;->Lcom/alarm/alarmmobile/android/util/AlarmWebViewClient;
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/alarm/alarmmobile/android/util/DirectStreamRequesterNew$6;checkServerTrustedLcom/alarm/alarmmobile/android/util/DirectStreamRequesterNew$6;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x34621cLjava/lang/Object;->Lcom/alarm/alarmmobile/android/util/DirectStreamRequesterNew$6;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLio/fabric/sdk/android/services/network/PinningTrustManager;checkServerTrustedLio/fabric/sdk/android/services/network/PinningTrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x4beb48Ljava/lang/Object;->Lio/fabric/sdk/android/services/network/PinningTrustManager;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/alarm/alarmmobile/android/util/DirectStreamRequesterNew$7;Lcom/alarm/alarmmobile/android/util/DirectStreamRequesterNew$7;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x346260Ljava/lang/Object;->Lcom/alarm/alarmmobile/android/util/DirectStreamRequesterNew$7;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLokhttp3/internal/tls/OkHostnameVerifier;Lokhttp3/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z [access_flags=public] @ 0x4e7d7cLjava/lang/Object;->Lokhttp3/internal/tls/OkHostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLokhttp3/internal/tls/OkHostnameVerifier;Lokhttp3/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x4e7dacLjava/lang/Object;->Lokhttp3/internal/tls/OkHostnameVerifier;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

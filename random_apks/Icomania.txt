@@ -1,0 +1,12 @@
+Analyze file: com.gamesforfriends.icomania.apk
+Package name: com.gamesforfriends.icomania
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/o;checkServerTrustedLcom/flurry/android/o;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0x116200Ljava/lang/Object;->Lcom/flurry/android/o;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/gamesforfriends/remote/ssl/TrustingSslSocketFactorySingleton$1;checkServerTrustedLcom/gamesforfriends/remote/ssl/TrustingSslSocketFactorySingleton$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x148094Ljava/lang/Object;->Lcom/gamesforfriends/remote/ssl/TrustingSslSocketFactorySingleton$1;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/gamesforfriends/remote/ssl/TrustingHostnameVerifierSingleton$1;Lcom/gamesforfriends/remote/ssl/TrustingHostnameVerifierSingleton$1;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x148010Ljava/lang/Object;->Lcom/gamesforfriends/remote/ssl/TrustingHostnameVerifierSingleton$1;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

@@ -1,0 +1,11 @@
+-------------------RESULTS-------------- 
+Analyze file: com.bkav.smarthome.ariel.apk
+Package name: com.bkav.smarthome.ariel
+ 
+Suspicious Permission Use: 
+READ_CONTACTS permission used 
+RECORD_AUDIO permission used 
+com.bkav.smarthome.ariel Exported receiver intent filter 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/owncloud/android/lib/common/network/AdvancedX509TrustManager;checkServerTrustedLcom/owncloud/android/lib/common/network/AdvancedX509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x31d548Ljava/lang/Object;->Lcom/owncloud/android/lib/common/network/AdvancedX509TrustManager;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLio/fabric/sdk/android/services/network/PinningTrustManager;checkServerTrustedLio/fabric/sdk/android/services/network/PinningTrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x32ead8Ljava/lang/Object;->Lio/fabric/sdk/android/services/network/PinningTrustManager;

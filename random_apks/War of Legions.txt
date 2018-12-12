@@ -1,0 +1,12 @@
+Analyze file: jp.co.a_tm.wol.en.apk
+Package name: jp.co.a_tm.wol.en
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+jp.co.a_tm.wol.en Exported receiver intent filter 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLa/a/a/a/g;checkServerTrustedLa/a/a/a/g;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0x39b60Ljava/lang/Object;->La/a/a/a/g;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLa/a/a/a/h;La/a/a/a/h;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public final] @ 0x39ba0Ljava/lang/Object;->La/a/a/a/h;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

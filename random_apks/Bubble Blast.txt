@@ -1,0 +1,11 @@
+Analyze file: com.sibforce.bubbleblast.apk
+Package name: com.sibforce.bubbleblast
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated ingetSharedHttpClientLjava/lang/Object;->Lcom/chartboost/sdk/Networking/CBAPIConnection;Lcom/chartboost/sdk/Networking/CBAPIConnection;->getSharedHttpClient()Lorg/apache/http/client/HttpClient; [access_flags=public static] @ 0x637a8
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/chartboost/sdk/Networking/CBAPIConnection$CBSSLSocketFactory$1;checkServerTrustedLcom/chartboost/sdk/Networking/CBAPIConnection$CBSSLSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x63524Ljava/lang/Object;->Lcom/chartboost/sdk/Networking/CBAPIConnection$CBSSLSocketFactory$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/n;checkServerTrustedLcom/flurry/android/n;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0x6d08cLjava/lang/Object;->Lcom/flurry/android/n;

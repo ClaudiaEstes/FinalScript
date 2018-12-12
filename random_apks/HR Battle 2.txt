@@ -1,0 +1,31 @@
+Analyze file: com.com2us.homerunbattle2.normal.freefull.google.global.android.common.apk
+Package name: com.com2us.homerunbattle2.normal.freefull.google.global.android.common
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+com.com2us.homerunbattle2.normal.freefull.google.global.android.common Exported receiver intent filter 
+com.com2us.homerunbattle2.normal.freefull.google.global.android.common Exported receiver intent filter 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated increateHttpClientLandroid/os/AsyncTask;->Lcom/chartboost/sdk/CBAPIConnection;Lcom/chartboost/sdk/CBAPIConnection;->createHttpClient()Lorg/apache/http/client/HttpClient; [access_flags=private] @ 0x122494
+	AllowAllHostnameVerifier is instantiated insendHttpsPostLjava/lang/Object;->Lcom/feelingk/lguiab/manager/net/NetworkManager;Lcom/feelingk/lguiab/manager/net/NetworkManager;->sendHttpsPost(Ljava/lang/String; Ljava/lang/String;)Lcom/feelingk/lguiab/vo/HttpResult; [access_flags=private static] @ 0x1ace7c
+	AllowAllHostnameVerifier is instantiated ingetNewHttpClientLjava/lang/Object;->Lcom/skt/arm/ArmSeedCheck;Lcom/skt/arm/ArmSeedCheck;->getNewHttpClient()Lorg/apache/http/client/HttpClient; [access_flags=public static] @ 0x2653f0
+App ignores ssl error: 
+	Custom ssl error handler inonReceivedSslErrorLandroid/webkit/WebViewClient;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0x122294Ljava/lang/Object;->Landroid/webkit/WebViewClient;
+	Custom ssl error handler inonReceivedSslErrorLcom/kt/olleh/inapp/dialog/DialogWebPay$MyWebView;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0x328078Landroid/webkit/WebViewClient;->Lcom/kt/olleh/inapp/dialog/DialogWebPay$MyWebView;
+	Custom ssl error handler inonReceivedSslErrorLcom/skplanet/dodo/IapWeb$1;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0x34cc10Landroid/webkit/WebViewClient;->Lcom/skplanet/dodo/IapWeb$1;
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/chartboost/sdk/CBAPIConnection$TrustingSocketFactory$1;checkServerTrustedLcom/chartboost/sdk/CBAPIConnection$TrustingSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x122380Ljava/lang/Object;->Lcom/chartboost/sdk/CBAPIConnection$TrustingSocketFactory$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/com2us/hub/httpclient/b;checkServerTrustedLcom/com2us/hub/httpclient/b;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x15d48cLjava/lang/Object;->Lcom/com2us/hub/httpclient/b;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/EasyX509TrustManager;checkServerTrustedLcom/flurry/android/EasyX509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x1b6578Ljava/lang/Object;->Lcom/flurry/android/EasyX509TrustManager;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/dp;checkServerTrustedLcom/flurry/android/dp;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0x1c1aecLjava/lang/Object;->Lcom/flurry/android/dp;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/kt/olleh/inapp/net/NetworkManager$2;checkServerTrustedLcom/kt/olleh/inapp/net/NetworkManager$2;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x20bd8cLjava/lang/Object;->Lcom/kt/olleh/inapp/net/NetworkManager$2;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/samsung/zirconia/LicenseRetriever$1;checkServerTrustedLcom/samsung/zirconia/LicenseRetriever$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x2595dcLjava/lang/Object;->Lcom/samsung/zirconia/LicenseRetriever$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/skt/arm/ArmSeedCheck$2;checkServerTrustedLcom/skt/arm/ArmSeedCheck$2;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x265060Ljava/lang/Object;->Lcom/skt/arm/ArmSeedCheck$2;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/skt/arm/ArmSeedCheck$MySSLSocketFactory$1;checkServerTrustedLcom/skt/arm/ArmSeedCheck$MySSLSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x2650e4Ljava/lang/Object;->Lcom/skt/arm/ArmSeedCheck$MySSLSocketFactory$1;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/com2us/hub/httpclient/a;Lcom/com2us/hub/httpclient/a;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x15d448Ljava/lang/Object;->Lcom/com2us/hub/httpclient/a;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/kt/olleh/inapp/net/NetworkManager$1;Lcom/kt/olleh/inapp/net/NetworkManager$1;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x20bd4cLjava/lang/Object;->Lcom/kt/olleh/inapp/net/NetworkManager$1;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/skt/arm/ArmSeedCheck$1;Lcom/skt/arm/ArmSeedCheck$1;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x265020Ljava/lang/Object;->Lcom/skt/arm/ArmSeedCheck$1;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/skt/arm/ArmSeedCheck$3;Lcom/skt/arm/ArmSeedCheck$3;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x2650a0Ljava/lang/Object;->Lcom/skt/arm/ArmSeedCheck$3;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

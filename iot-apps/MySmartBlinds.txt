@@ -1,0 +1,7 @@
+-------------------RESULTS-------------- 
+Analyze file: com.mysmartblinds2.android.apk
+Package name: com.mysmartblinds2.android
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+android.intent.category.DEFAULT Exported service intent filter 

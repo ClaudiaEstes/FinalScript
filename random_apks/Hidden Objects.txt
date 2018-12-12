@@ -1,0 +1,12 @@
+Analyze file: com.tobiapps.android_hiddenobjects.apk
+Package name: com.tobiapps.android_hiddenobjects
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+com.tobiapps.android_hiddenobjects Exported receiver intent filter 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated in<init>Lorg/apache/http/conn/ssl/SSLSocketFactory;->Lcom/wiyun/engine/network/TrustAllSSLSocketFactory;Lcom/wiyun/engine/network/TrustAllSSLSocketFactory;-><init>()V [access_flags=public constructor] @ 0xe1ed8
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/o;checkServerTrustedLcom/flurry/android/o;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0x97568Ljava/lang/Object;->Lcom/flurry/android/o;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/wiyun/engine/network/TrustAllManager;checkServerTrustedLcom/wiyun/engine/network/TrustAllManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0xe1eb0Ljava/lang/Object;->Lcom/wiyun/engine/network/TrustAllManager;

@@ -1,0 +1,7 @@
+-------------------RESULTS-------------- 
+Analyze file: com.lutron.mmw.apk
+Package name: com.lutron.mmw
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+android.intent.category.DEFAULT Exported receiver intent filter 

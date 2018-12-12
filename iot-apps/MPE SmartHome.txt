@@ -1,0 +1,6 @@
+-------------------RESULTS-------------- 
+Analyze file: com.mpesmarthome.bluetoothlight.apk
+Package name: com.mpesmarthome.bluetoothlight
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 

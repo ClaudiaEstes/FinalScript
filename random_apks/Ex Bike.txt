@@ -1,0 +1,10 @@
+Analyze file: com.bgames.android.bikerun.apk
+Package name: com.bgames.android.bikerun
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+com.bgames.android.bikerun Exported receiver intent filter 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/monolithic/sdk/impl/iy;checkServerTrustedLcom/flurry/android/monolithic/sdk/impl/iy;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x11542cLjava/lang/Object;->Lcom/flurry/android/monolithic/sdk/impl/iy;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/github/droidfu/http/ssl/TrivialTrustManager;checkServerTrustedLcom/github/droidfu/http/ssl/TrivialTrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x1318dcLjava/lang/Object;->Lcom/github/droidfu/http/ssl/TrivialTrustManager;

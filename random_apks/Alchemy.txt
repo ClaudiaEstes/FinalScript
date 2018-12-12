@@ -1,0 +1,6 @@
+Analyze file: me.zed_0xff.android.alchemy.apk
+Package name: me.zed_0xff.android.alchemy
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 

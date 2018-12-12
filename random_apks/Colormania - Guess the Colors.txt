@@ -1,0 +1,15 @@
+Analyze file: air.com.generamobile.colormaniaguess.apk
+Package name: air.com.generamobile.colormaniaguess
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+air.com.generamobile.colormaniaguess Exported receiver intent filter 
+App ignores ssl error: 
+	Custom ssl error handler inonReceivedSslErrorLcom/adobe/air/AndroidWebView$2;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0x10df00Landroid/webkit/WebViewClient;->Lcom/adobe/air/AndroidWebView$2;
+	Custom ssl error handler inonReceivedSslErrorLcom/inmobi/re/container/b;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0x2765e0Landroid/webkit/WebViewClient;->Lcom/inmobi/re/container/b;
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/dp;checkServerTrustedLcom/flurry/android/dp;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0x1623b8Ljava/lang/Object;->Lcom/flurry/android/dp;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/EasyX509TrustManager;checkServerTrustedLcom/flurry/android/EasyX509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x16388cLjava/lang/Object;->Lcom/flurry/android/EasyX509TrustManager;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/gi/genericlibrary/net/AdditionalKeyStoresSSLSocketFactory$AdditionalKeyStoresTrustManager;checkServerTrustedLcom/gi/genericlibrary/net/AdditionalKeyStoresSSLSocketFactory$AdditionalKeyStoresTrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x1f0dd8Ljava/lang/Object;->Lcom/gi/genericlibrary/net/AdditionalKeyStoresSSLSocketFactory$AdditionalKeyStoresTrustManager;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLew;checkServerTrustedLew;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0x312fc0Ljava/lang/Object;->Lew;

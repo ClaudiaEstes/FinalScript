@@ -1,0 +1,13 @@
+Analyze file: com.candy.givemespirit.apk
+Package name: com.candy.givemespirit
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated innewSslSocketFactoryLorg/apache/http/impl/client/DefaultHttpClient;->Lcom/bugsense/trace/CryptoHttpClient;Lcom/bugsense/trace/CryptoHttpClient;->newSslSocketFactory()Lorg/apache/http/conn/ssl/SSLSocketFactory; [access_flags=private] @ 0x3fae0
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLorg/apache/cordova/FileTransfer$2;checkServerTrustedLorg/apache/cordova/FileTransfer$2;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x65f68Ljava/lang/Object;->Lorg/apache/cordova/FileTransfer$2;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLorg/apache/cordova/FileTransfer$1;Lorg/apache/cordova/FileTransfer$1;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x65f24Ljava/lang/Object;->Lorg/apache/cordova/FileTransfer$1;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

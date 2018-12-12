@@ -1,0 +1,15 @@
+-------------------RESULTS-------------- 
+Analyze file: com.cloudblocks.android.user.apk
+Package name: com.cloudblocks.android.user
+ 
+Suspicious Permission Use: 
+READ_CONTACTS permission used 
+com.cloudblocks.android.user Exported receiver intent filter 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated inaLorg/apache/http/impl/client/DefaultHttpClient;->Lcom/amazon/identity/auth/device/endpoint/AbstractPandaRequest$UnsafeSslHttpClient;Lcom/amazon/identity/auth/device/endpoint/AbstractPandaRequest$UnsafeSslHttpClient;->a()Lorg/apache/http/conn/ssl/SSLSocketFactory; [access_flags=private] @ 0x1bbf8c
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/amazon/identity/auth/device/endpoint/AbstractPandaRequest$UnsafeSslHttpClient$MySSLSocketFactory$1;checkServerTrustedLcom/amazon/identity/auth/device/endpoint/AbstractPandaRequest$UnsafeSslHttpClient$MySSLSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x1bbea8Ljava/lang/Object;->Lcom/amazon/identity/auth/device/endpoint/AbstractPandaRequest$UnsafeSslHttpClient$MySSLSocketFactory$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLio/fabric/sdk/android/services/network/f;checkServerTrustedLio/fabric/sdk/android/services/network/f;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0x31e8e0Ljava/lang/Object;->Lio/fabric/sdk/android/services/network/f;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLokhttp3/internal/g/e;Lokhttp3/internal/g/e;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public final] @ 0x332b98Ljava/lang/Object;->Lokhttp3/internal/g/e;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

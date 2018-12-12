@@ -1,0 +1,14 @@
+Analyze file: com.rovio.angrybirdsstarwarsii.ads.apk
+Package name: com.rovio.angrybirdsstarwarsii.ads
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+com.rovio.angrybirdsstarwarsii.ads Exported receiver intent filter 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated ingetClientLjava/lang/Object;->Lcom/burstly/lib/util/Utils;Lcom/burstly/lib/util/Utils;->getClient()Lorg/apache/http/client/HttpClient; [access_flags=private static] @ 0x135690
+App ignores ssl error: 
+	Custom ssl error handler inonReceivedSslErrorLcom/inmobi/re/container/b;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0x23df8cLandroid/webkit/WebViewClient;->Lcom/inmobi/re/container/b;
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/burstly/lib/util/BurstlySSLSocketFactory$1;checkServerTrustedLcom/burstly/lib/util/BurstlySSLSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x133408Ljava/lang/Object;->Lcom/burstly/lib/util/BurstlySSLSocketFactory$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/n;checkServerTrustedLcom/flurry/android/n;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0x1509fcLjava/lang/Object;->Lcom/flurry/android/n;

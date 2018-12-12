@@ -1,0 +1,8 @@
+-------------------RESULTS-------------- 
+Analyze file: com.iotwear.wear.apk
+Package name: com.iotwear.wear
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated innewSslSocketFactoryLorg/apache/http/impl/client/DefaultHttpClient;->Lcom/bugsense/trace/CryptoHttpClient;Lcom/bugsense/trace/CryptoHttpClient;->newSslSocketFactory()Lorg/apache/http/conn/ssl/SSLSocketFactory; [access_flags=private] @ 0x7f064

@@ -1,0 +1,19 @@
+-------------------RESULTS-------------- 
+Analyze file: com.eques.plug.apk
+Package name: com.eques.plug
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated in<clinit>Ljava/lang/Object;->Lorg/apache/http/conn/ssl/SSLSocketFactory;Lorg/apache/http/conn/ssl/SSLSocketFactory;-><clinit>()V [access_flags=static constructor] @ 0x2f9f10
+	AllowAllHostnameVerifier is instantiated incheckAndProcessSSLLjava/lang/Object;->Lcom/easemob/cloud/HttpClientManager;Lcom/easemob/cloud/HttpClientManager;->checkAndProcessSSL(Ljava/lang/String; Lorg/apache/http/impl/client/DefaultHttpClient;)V [access_flags=static] @ 0x3618c0
+	AllowAllHostnameVerifier is instantiated indoNotValidateCertificateLjava/lang/Object;->Lcom/google/api/client/http/apache/ApacheHttpTransport$Builder;Lcom/google/api/client/http/apache/ApacheHttpTransport$Builder;->doNotValidateCertificate()Lcom/google/api/client/http/apache/ApacheHttpTransport$Builder; [access_flags=public] @ 0x406e50
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/baidu/lbsapi/auth/c$b;checkServerTrustedLcom/baidu/lbsapi/auth/c$b;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x2fa6f8Lorg/apache/http/conn/ssl/SSLSocketFactory;->Lcom/baidu/lbsapi/auth/c$b;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/easemob/cloud/MySSLSocketFactory$1;checkServerTrustedLcom/easemob/cloud/MySSLSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x363820Ljava/lang/Object;->Lcom/easemob/cloud/MySSLSocketFactory$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/google/api/client/util/SslUtils$1;checkServerTrustedLcom/google/api/client/util/SslUtils$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x416468Ljava/lang/Object;->Lcom/google/api/client/util/SslUtils$1;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/avos/avoscloud/okhttp/internal/tls/OkHostnameVerifier;Lcom/avos/avoscloud/okhttp/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z [access_flags=public] @ 0x2e0f48Ljava/lang/Object;->Lcom/avos/avoscloud/okhttp/internal/tls/OkHostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/avos/avoscloud/okhttp/internal/tls/OkHostnameVerifier;Lcom/avos/avoscloud/okhttp/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x2e0f78Ljava/lang/Object;->Lcom/avos/avoscloud/okhttp/internal/tls/OkHostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/google/api/client/util/SslUtils$2;Lcom/google/api/client/util/SslUtils$2;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x4164a8Ljava/lang/Object;->Lcom/google/api/client/util/SslUtils$2;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

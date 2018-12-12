@@ -1,0 +1,6 @@
+Analyze file: com.distinctdev.tmtlite2.apk
+Package name: com.distinctdev.tmtlite2
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 

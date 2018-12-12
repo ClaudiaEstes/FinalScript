@@ -1,0 +1,7 @@
+Analyze file: com.angryheroesgame.halloween.apk
+Package name: com.angryheroesgame.halloween
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+android.intent.category.DEFAULT Exported service intent filter 

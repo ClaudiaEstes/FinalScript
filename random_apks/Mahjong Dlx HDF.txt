@@ -1,0 +1,13 @@
+Analyze file: com.ensenasoft.mahjongdlxf.apk
+Package name: com.ensenasoft.mahjongdlxf
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated innewSslSocketFactoryLorg/apache/http/impl/client/DefaultHttpClient;->Lcom/amazon/identity/auth/device/endpoint/AbstractTokenRequest$MyHttpClient;Lcom/amazon/identity/auth/device/endpoint/AbstractTokenRequest$MyHttpClient;->newSslSocketFactory()Lorg/apache/http/conn/ssl/SSLSocketFactory; [access_flags=private] @ 0xbb828
+	AllowAllHostnameVerifier is instantiated increateHttpClientLandroid/os/AsyncTask;->Lcom/chartboost/sdk/CBAPIConnection;Lcom/chartboost/sdk/CBAPIConnection;->createHttpClient()Lorg/apache/http/client/HttpClient; [access_flags=private] @ 0xc2934
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/amazon/identity/auth/device/endpoint/AbstractTokenRequest$MyHttpClient$MySSLSocketFactory$1;checkServerTrustedLcom/amazon/identity/auth/device/endpoint/AbstractTokenRequest$MyHttpClient$MySSLSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0xbb734Ljava/lang/Object;->Lcom/amazon/identity/auth/device/endpoint/AbstractTokenRequest$MyHttpClient$MySSLSocketFactory$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/chartboost/sdk/CBAPIConnection$TrustingSocketFactory$1;checkServerTrustedLcom/chartboost/sdk/CBAPIConnection$TrustingSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0xc2820Ljava/lang/Object;->Lcom/chartboost/sdk/CBAPIConnection$TrustingSocketFactory$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/n;checkServerTrustedLcom/flurry/android/n;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0xccd30Ljava/lang/Object;->Lcom/flurry/android/n;

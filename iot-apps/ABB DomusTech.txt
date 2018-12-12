@@ -1,0 +1,6 @@
+-------------------RESULTS-------------- 
+Analyze file: com.abb.domustech.apk
+Package name: com.abb.domustech
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 

@@ -1,0 +1,9 @@
+Analyze file: com.gamecircus.PrizeClaw.apk
+Package name: com.gamecircus.PrizeClaw
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/o;checkServerTrustedLcom/flurry/android/o;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0xc49acLjava/lang/Object;->Lcom/flurry/android/o;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/urbanairship/restclient/ssl/PermissiveX509TrustManager;checkServerTrustedLcom/urbanairship/restclient/ssl/PermissiveX509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x1e9a74Ljava/lang/Object;->Lcom/urbanairship/restclient/ssl/PermissiveX509TrustManager;

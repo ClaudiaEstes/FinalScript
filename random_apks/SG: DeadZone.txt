@@ -1,0 +1,8 @@
+Analyze file: com.madfingergames.deadzone.apk
+Package name: com.madfingergames.deadzone
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/feelingk/iap/net/TrustManager;checkServerTrustedLcom/feelingk/iap/net/TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0xe59c0Ljava/lang/Object;->Lcom/feelingk/iap/net/TrustManager;

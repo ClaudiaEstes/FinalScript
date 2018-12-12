@@ -1,0 +1,11 @@
+-------------------RESULTS-------------- 
+Analyze file: com.hackajoelabs.hook.apk
+Package name: com.hackajoelabs.hook
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLorg/apache/cordova/filetransfer/FileTransfer$3;checkServerTrustedLorg/apache/cordova/filetransfer/FileTransfer$3;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x17cacLjava/lang/Object;->Lorg/apache/cordova/filetransfer/FileTransfer$3;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLorg/apache/cordova/filetransfer/FileTransfer$2;Lorg/apache/cordova/filetransfer/FileTransfer$2;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x17c6cLjava/lang/Object;->Lorg/apache/cordova/filetransfer/FileTransfer$2;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

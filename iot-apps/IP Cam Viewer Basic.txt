@@ -1,0 +1,17 @@
+-------------------RESULTS-------------- 
+Analyze file: com.rcreations.ipcamviewerBasic.apk
+Package name: com.rcreations.ipcamviewerBasic
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+App ignores ssl error: 
+	Custom ssl error handler inonReceivedSslErrorLcom/facebook/ads/internal/view/c$3;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0x240a50Landroid/webkit/WebViewClient;->Lcom/facebook/ads/internal/view/c$3;
+	Custom ssl error handler inonReceivedSslErrorLcom/inmobi/re/container/IMWebView$1;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0x2dd03cLandroid/webkit/WebViewClient;->Lcom/inmobi/re/container/IMWebView$1;
+	Custom ssl error handler inonReceivedSslErrorLcom/rcreations/ipcamviewerBasic/WebActivity$1;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0x327154Landroid/webkit/WebViewClient;->Lcom/rcreations/ipcamviewerBasic/WebActivity$1;
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/rcreations/ipcamviewerBasic/ssl/AcceptAllTrustManager;checkServerTrustedLcom/rcreations/ipcamviewerBasic/ssl/AcceptAllTrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x32f428Ljava/lang/Object;->Lcom/rcreations/ipcamviewerBasic/ssl/AcceptAllTrustManager;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/rcreations/jsputils/SslUtils$MySSLSocketFactory$1;checkServerTrustedLcom/rcreations/jsputils/SslUtils$MySSLSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x33556cLjava/lang/Object;->Lcom/rcreations/jsputils/SslUtils$MySSLSocketFactory$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/rcreations/webcamdrivers/ssl/AcceptAllTrustManager;checkServerTrustedLcom/rcreations/webcamdrivers/ssl/AcceptAllTrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x36663cLjava/lang/Object;->Lcom/rcreations/webcamdrivers/ssl/AcceptAllTrustManager;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/rcreations/jsputils/SslUtils$IgnoreHostnameVerifier;Lcom/rcreations/jsputils/SslUtils$IgnoreHostnameVerifier;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x335528Ljava/lang/Object;->Lcom/rcreations/jsputils/SslUtils$IgnoreHostnameVerifier;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

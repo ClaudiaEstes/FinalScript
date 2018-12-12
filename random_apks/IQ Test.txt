@@ -1,0 +1,8 @@
+Analyze file: com.mindgames.ak.aj.iqtestwithanswers.apk
+Package name: com.mindgames.ak.aj.iqtestwithanswers
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App ignores ssl error: 
+	Custom ssl error handler inonReceivedSslErrorLcom/inmobi/re/container/b;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0x9e184Landroid/webkit/WebViewClient;->Lcom/inmobi/re/container/b;

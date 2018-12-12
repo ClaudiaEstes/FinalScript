@@ -1,0 +1,7 @@
+Analyze file: whats.the.saying.quiz.apk
+Package name: whats.the.saying.quiz
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+whats.the.saying.quiz Exported receiver intent filter 

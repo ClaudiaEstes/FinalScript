@@ -1,0 +1,6 @@
+Analyze file: com.ezjoynetwork.jewelsmaze.apk
+Package name: com.ezjoynetwork.jewelsmaze
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 

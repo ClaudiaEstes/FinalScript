@@ -1,0 +1,5 @@
+Analyze file: Zuum.apk
+Package name: com.m4u.vivozuum
+Suspicious Permission Use: 
+READ_CONTACTS permission used 
+com.m4u.vivozuum Exported receiver intent filter 

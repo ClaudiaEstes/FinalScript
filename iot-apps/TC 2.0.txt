@@ -1,0 +1,10 @@
+-------------------RESULTS-------------- 
+Analyze file: com.alarmnet.tc2.apk
+Package name: com.alarmnet.tc2
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+android.intent.category.DEFAULT Exported receiver intent filter 
+com.alarmnet.tc2 Exported receiver intent filter 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLb/a/a/a/a/e/h;checkServerTrustedLb/a/a/a/a/e/h;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x26a1dcLjava/lang/Object;->Lb/a/a/a/a/e/h;

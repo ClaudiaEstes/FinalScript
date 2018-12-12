@@ -1,0 +1,8 @@
+Analyze file: com.fgol.shark3.apk
+Package name: com.fgol.shark3
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/n;checkServerTrustedLcom/flurry/android/n;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0x38cc0Ljava/lang/Object;->Lcom/flurry/android/n;

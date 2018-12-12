@@ -1,0 +1,8 @@
+Analyze file: com.oxothuk.worldpuzzle.apk
+Package name: com.oxothuk.worldpuzzle
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App ignores ssl error: 
+	Custom ssl error handler inonReceivedSslErrorLcom/inmobi/re/container/b;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0xfc8fcLandroid/webkit/WebViewClient;->Lcom/inmobi/re/container/b;

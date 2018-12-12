@@ -1,0 +1,8 @@
+-------------------RESULTS-------------- 
+Analyze file: com.commandfusion.droidviewer.apk
+Package name: com.commandfusion.droidviewer
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLorg/acra/util/NaiveTrustManager;checkServerTrustedLorg/acra/util/NaiveTrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x98e04Ljava/lang/Object;->Lorg/acra/util/NaiveTrustManager;

@@ -1,0 +1,10 @@
+Analyze file: com.glu.android.zombsniper.apk
+Package name: com.glu.android.zombsniper
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+com.glu.android.zombsniper Exported receiver intent filter 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/n;checkServerTrustedLcom/flurry/android/n;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0x38f64Ljava/lang/Object;->Lcom/flurry/android/n;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/urbanairship/restclient/ssl/PermissiveX509TrustManager;checkServerTrustedLcom/urbanairship/restclient/ssl/PermissiveX509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0xa7dd0Ljava/lang/Object;->Lcom/urbanairship/restclient/ssl/PermissiveX509TrustManager;

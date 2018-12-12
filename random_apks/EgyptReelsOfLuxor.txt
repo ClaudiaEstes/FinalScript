@@ -1,0 +1,16 @@
+Analyze file: com.EgyptReelsOfLuxor.gold.apk
+Package name: com.EgyptReelsOfLuxor.gold
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated innewSSLSocketFactoryInstanceLorg/apache/http/impl/client/DefaultHttpClient;->Lcom/getjar/sdk/comm/GetJarHttpClient;Lcom/getjar/sdk/comm/GetJarHttpClient;->newSSLSocketFactoryInstance()Lcom/getjar/sdk/comm/SSLSocketFactoryTrustAll; [access_flags=private static] @ 0x2727c
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/getjar/sdk/comm/SSLSocketFactoryTrustAll$1;checkServerTrustedLcom/getjar/sdk/comm/SSLSocketFactoryTrustAll$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x2d4d8Ljava/lang/Object;->Lcom/getjar/sdk/comm/SSLSocketFactoryTrustAll$1;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/getjar/sdk/comm/SSLSocketFactoryTrustAll$2;Lcom/getjar/sdk/comm/SSLSocketFactoryTrustAll$2;->verify(Ljava/lang/String; Ljava/security/cert/X509Certificate;)V [access_flags=public] @ 0x2d518Ljava/lang/Object;->Lcom/getjar/sdk/comm/SSLSocketFactoryTrustAll$2;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/getjar/sdk/comm/SSLSocketFactoryTrustAll$2;Lcom/getjar/sdk/comm/SSLSocketFactoryTrustAll$2;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSocket;)V [access_flags=public] @ 0x2d52cLjava/lang/Object;->Lcom/getjar/sdk/comm/SSLSocketFactoryTrustAll$2;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/getjar/sdk/comm/SSLSocketFactoryTrustAll$2;Lcom/getjar/sdk/comm/SSLSocketFactoryTrustAll$2;->verify(Ljava/lang/String; [Ljava/lang/String; [Ljava/lang/String;)V [access_flags=public] @ 0x2d540Ljava/lang/Object;->Lcom/getjar/sdk/comm/SSLSocketFactoryTrustAll$2;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/getjar/sdk/comm/SSLSocketFactoryTrustAll$2;Lcom/getjar/sdk/comm/SSLSocketFactoryTrustAll$2;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x2d554Ljava/lang/Object;->Lcom/getjar/sdk/comm/SSLSocketFactoryTrustAll$2;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

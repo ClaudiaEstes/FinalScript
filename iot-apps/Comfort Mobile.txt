@@ -1,0 +1,6 @@
+-------------------RESULTS-------------- 
+Analyze file: com.energeek.cytechaphone.apk
+Package name: com.energeek.cytechaphone
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 

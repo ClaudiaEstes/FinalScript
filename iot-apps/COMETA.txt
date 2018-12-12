@@ -1,0 +1,11 @@
+-------------------RESULTS-------------- 
+Analyze file: com.cometa.iot.apk
+Package name: com.cometa.iot
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/squareup/okhttp/internal/tls/OkHostnameVerifier;Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z [access_flags=public] @ 0x257110Ljava/lang/Object;->Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/squareup/okhttp/internal/tls/OkHostnameVerifier;Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x257140Ljava/lang/Object;->Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLokhttp3/internal/tls/OkHostnameVerifier;Lokhttp3/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z [access_flags=public] @ 0x285c58Ljava/lang/Object;->Lokhttp3/internal/tls/OkHostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLokhttp3/internal/tls/OkHostnameVerifier;Lokhttp3/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x285c88Ljava/lang/Object;->Lokhttp3/internal/tls/OkHostnameVerifier;

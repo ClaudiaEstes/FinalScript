@@ -1,0 +1,12 @@
+-------------------RESULTS-------------- 
+Analyze file: com.cognitial.directvremote.apk
+Package name: com.cognitial.directvremote
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated inInitializeAcceptAllLjava/lang/Object;->Lanywheresoftware/b4a/http/HttpClientWrapper;Lanywheresoftware/b4a/http/HttpClientWrapper;->InitializeAcceptAll(Ljava/lang/String;)V [access_flags=public] @ 0x8f244
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLanywheresoftware/b4a/http/HttpClientWrapper$NaiveTrustManager;checkServerTrustedLanywheresoftware/b4a/http/HttpClientWrapper$NaiveTrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x8f048Ljava/lang/Object;->Lanywheresoftware/b4a/http/HttpClientWrapper$NaiveTrustManager;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLorg/apache/commons/net/ftp/FTPSTrustManager;checkServerTrustedLorg/apache/commons/net/ftp/FTPSTrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x11ed14Ljava/lang/Object;->Lorg/apache/commons/net/ftp/FTPSTrustManager;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLorg/apache/commons/net/util/TrustManagerUtils$TrustManager;checkServerTrustedLorg/apache/commons/net/util/TrustManagerUtils$TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x127240Ljava/lang/Object;->Lorg/apache/commons/net/util/TrustManagerUtils$TrustManager;

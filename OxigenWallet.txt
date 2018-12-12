@@ -1,0 +1,7 @@
+Analyze file: /Users/solivialeonvitervo/Documents/FinalScript/OxigenWallet.apk
+Package name: com.oxigen.oxigenwallet
+Suspicious Permission Use: 
+READ_CONTACTS permission used 
+com.oxigen.oxigenwallet Exported receiver intent filter 
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 

@@ -1,0 +1,6 @@
+-------------------RESULTS-------------- 
+Analyze file: com.icontrol.centurylink.apk
+Package name: com.icontrol.centurylink
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 

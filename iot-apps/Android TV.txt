@@ -1,0 +1,10 @@
+-------------------RESULTS-------------- 
+Analyze file: com.google.android.tv.remote.apk
+Package name: com.google.android.tv.remote
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/google/android/gms/internal/zzsy$1;checkServerTrustedLcom/google/android/gms/internal/zzsy$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x2ac778Ljava/lang/Object;->Lcom/google/android/gms/internal/zzsy$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;checkServerTrustedLcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x316c00Ljava/lang/Object;->Lcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/google/polo/ssl/DummyTrustManager;checkServerTrustedLcom/google/polo/ssl/DummyTrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x32f0dcLjava/lang/Object;->Lcom/google/polo/ssl/DummyTrustManager;

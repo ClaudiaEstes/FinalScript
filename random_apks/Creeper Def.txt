@@ -1,0 +1,6 @@
+Analyze file: com.navyduck.creeperdefense.apk
+Package name: com.navyduck.creeperdefense
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 

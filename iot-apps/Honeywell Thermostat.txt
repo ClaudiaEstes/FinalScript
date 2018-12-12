@@ -1,0 +1,9 @@
+-------------------RESULTS-------------- 
+Analyze file: com.seoby.smarthome.thermostat.apk
+Package name: com.seoby.smarthome.thermostat
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/sal/connector/EasyX509TrustManager;checkServerTrustedLcom/sal/connector/EasyX509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x6d6a8Ljava/lang/Object;->Lcom/sal/connector/EasyX509TrustManager;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/seoby/remocon/controller/TcpControl$1;checkServerTrustedLcom/seoby/remocon/controller/TcpControl$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x755ccLjava/lang/Object;->Lcom/seoby/remocon/controller/TcpControl$1;

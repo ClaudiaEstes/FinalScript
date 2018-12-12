@@ -1,0 +1,6 @@
+Analyze file: com.rubicon.dev.yachty.apk
+Package name: com.rubicon.dev.yachty
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 

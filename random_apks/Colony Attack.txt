@@ -1,0 +1,10 @@
+Analyze file: com.geekbeach.spacegame.apk
+Package name: com.geekbeach.spacegame
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+com.geekbeach.spacegame Exported receiver intent filter 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/an;checkServerTrustedLcom/flurry/android/an;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0xf80a0Ljava/lang/Object;->Lcom/flurry/android/an;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/dd;checkServerTrustedLcom/flurry/android/dd;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0xff74cLjava/lang/Object;->Lcom/flurry/android/dd;

@@ -1,0 +1,12 @@
+Analyze file: sts.dl.apk
+Package name: sts.dl
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+sts.dl Exported receiver intent filter 
+sts.dl Exported receiver intent filter 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated ingetConnectionManagerLjava/lang/Object;->Lcom/nativex/advertiser/HttpConnectionManager;Lcom/nativex/advertiser/HttpConnectionManager;->getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager; [access_flags=private] @ 0xbeb30
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/nativex/advertiser/EasySSLSocketFactory$1;checkServerTrustedLcom/nativex/advertiser/EasySSLSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0xbea18Ljava/lang/Object;->Lcom/nativex/advertiser/EasySSLSocketFactory$1;

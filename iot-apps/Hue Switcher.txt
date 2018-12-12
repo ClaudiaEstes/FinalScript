@@ -1,0 +1,9 @@
+-------------------RESULTS-------------- 
+Analyze file: com.philips.hueswitcher.quickstart.apk
+Package name: com.philips.hueswitcher.quickstart
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+com.philips.hueswitcher.quickstart Exported receiver intent filter 
+App ignores ssl error: 
+	Custom ssl error handler inonReceivedSslErrorLcom/facebook/ads/internal/view/c$3;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0x260d9cLandroid/webkit/WebViewClient;->Lcom/facebook/ads/internal/view/c$3;

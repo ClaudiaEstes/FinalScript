@@ -1,0 +1,6 @@
+Analyze file: air.pokemonquiz.apk
+Package name: air.pokemonquiz
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 

@@ -1,0 +1,10 @@
+Analyze file: com.baringsprod.numbersAddict.free.gp.apk
+Package name: com.baringsprod.numbersAddict.free.gp
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated innewSslSocketFactoryLorg/apache/http/impl/client/DefaultHttpClient;->Lcom/amazon/identity/auth/device/endpoint/AbstractTokenRequest$MyHttpClient;Lcom/amazon/identity/auth/device/endpoint/AbstractTokenRequest$MyHttpClient;->newSslSocketFactory()Lorg/apache/http/conn/ssl/SSLSocketFactory; [access_flags=private] @ 0xaf724
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/amazon/identity/auth/device/endpoint/AbstractTokenRequest$MyHttpClient$MySSLSocketFactory$1;checkServerTrustedLcom/amazon/identity/auth/device/endpoint/AbstractTokenRequest$MyHttpClient$MySSLSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0xaf630Ljava/lang/Object;->Lcom/amazon/identity/auth/device/endpoint/AbstractTokenRequest$MyHttpClient$MySSLSocketFactory$1;

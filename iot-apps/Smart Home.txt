@@ -1,0 +1,18 @@
+-------------------RESULTS-------------- 
+Analyze file: com.nxcontrol.remotemini.apk
+Package name: com.nxcontrol.remotemini
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated ingetFixedSocketFactoryLorg/apache/http/conn/ssl/SSLSocketFactory;->Lcom/loopj/android/http/MySSLSocketFactory;Lcom/loopj/android/http/MySSLSocketFactory;->getFixedSocketFactory()Lorg/apache/http/conn/ssl/SSLSocketFactory; [access_flags=public static] @ 0x273bb4
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/loopj/android/http/MySSLSocketFactory$1;checkServerTrustedLcom/loopj/android/http/MySSLSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x273b40Ljava/lang/Object;->Lcom/loopj/android/http/MySSLSocketFactory$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/nxcontrol/remote/mqtt/AllCertificatesAndHostsTruster;checkServerTrustedLcom/nxcontrol/remote/mqtt/AllCertificatesAndHostsTruster;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0x2d9f30Ljava/lang/Object;->Lcom/nxcontrol/remote/mqtt/AllCertificatesAndHostsTruster;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/nxcontrol/remote/mqtt/AllCertificatesAndHostsTruster;checkServerTrustedLcom/nxcontrol/remote/mqtt/AllCertificatesAndHostsTruster;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0x2d9f30Ljava/lang/Object;->Lcom/nxcontrol/remote/mqtt/AllCertificatesAndHostsTruster;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/nxcontrol/remote/mqtt/AllCertificatesAndHostsTruster$1;Lcom/nxcontrol/remote/mqtt/AllCertificatesAndHostsTruster$1;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x2d9e24Ljava/lang/Object;->Lcom/nxcontrol/remote/mqtt/AllCertificatesAndHostsTruster$1;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/nxcontrol/remote/web/AppController$4;Lcom/nxcontrol/remote/web/AppController$4;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x303804Ljava/lang/Object;->Lcom/nxcontrol/remote/web/AppController$4;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLokhttp3/internal/tls/OkHostnameVerifier;Lokhttp3/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z [access_flags=public] @ 0x32f6acLjava/lang/Object;->Lokhttp3/internal/tls/OkHostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLokhttp3/internal/tls/OkHostnameVerifier;Lokhttp3/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x32f6dcLjava/lang/Object;->Lokhttp3/internal/tls/OkHostnameVerifier;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

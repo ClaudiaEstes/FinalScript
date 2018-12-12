@@ -1,0 +1,9 @@
+Analyze file: com.sixwaves.crosswordpop.apk
+Package name: com.sixwaves.crosswordpop
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+com.sixwaves.imagepop Exported receiver intent filter 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/m;checkServerTrustedLcom/flurry/android/m;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0xf35d8Ljava/lang/Object;->Lcom/flurry/android/m;

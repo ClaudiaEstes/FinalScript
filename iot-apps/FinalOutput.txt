@@ -1,0 +1,522 @@
+-------------------RESULTS-------------- 
+Analyze file: com.abode.abode.apk
+Package name: com.abode.abode
+ 
+Suspicious Permission Use: 
+READ_CONTACTS permission use: 1
+No exported activities
+No exported services
+Exported receivers: 1
+App implements custom HostnameVerifier: 
+-------------------RESULTS-------------- 
+Analyze file: com.commandfusion.droidviewer.apk
+Package name: com.commandfusion.droidviewer
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+-------------------RESULTS-------------- 
+Analyze file: com.ivideon.client.apk
+Package name: com.ivideon.client
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+Exported receivers: 1
+-------------------RESULTS-------------- 
+Analyze file: com.energeek.cytechaphone.apk
+Package name: com.energeek.cytechaphone
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+-------------------RESULTS-------------- 
+Analyze file: com.seoby.smarthome.thermostat.apk
+Package name: com.seoby.smarthome.thermostat
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+-------------------RESULTS-------------- 
+Analyze file: com.orvibo.rf.activitys.apk
+Package name: com.orvibo.rf.activitys
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+-------------------RESULTS-------------- 
+Analyze file: com.nokia.dhbu.smartHome.apk
+Package name: com.nokia.dhbu.smartHome
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+App ignores ssl error: 
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+-------------------RESULTS-------------- 
+Analyze file: com.alarm.alarmmobile.android.cpi.apk
+Package name: com.alarm.alarmmobile.android.cpi
+ 
+Suspicious Permission Use: 
+READ_CONTACTS permission use: 1
+No exported activities
+No exported services
+Exported receivers: 1
+App ignores ssl error: 
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+-------------------RESULTS-------------- 
+Analyze file: com.netichome.android.cockpit.apk
+Package name: com.netichome.android.cockpit
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+-------------------RESULTS-------------- 
+Analyze file: com.mpesmarthome.bluetoothlight.apk
+Package name: com.mpesmarthome.bluetoothlight
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+No exported receivers
+-------------------RESULTS-------------- 
+Analyze file: com.iot.engine.apk
+Package name: com.iot.engine
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+-------------------RESULTS-------------- 
+Analyze file: com.mediola.spro.apk
+Package name: com.mediola.spro
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+-------------------RESULTS-------------- 
+Analyze file: au.com.mobelisk.iotcommander.apk
+Package name: au.com.mobelisk.iotcommander
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+-------------------RESULTS-------------- 
+Analyze file: com.logitech.harmonyhub.apk
+Package name: com.logitech.harmonyhub
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+No exported receivers
+-------------------RESULTS-------------- 
+Analyze file: com.keeproduct.smartHome.apk
+Package name: com.keeproduct.smartHome
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+No exported receivers
+App implements custom HostnameVerifier: 
+-------------------RESULTS-------------- 
+Analyze file: com.cometa.iot.apk
+Package name: com.cometa.iot
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App implements custom HostnameVerifier: 
+-------------------RESULTS-------------- 
+Analyze file: com.mysmartblinds2.android.apk
+Package name: com.mysmartblinds2.android
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+Exported services: 1
+No exported receivers
+-------------------RESULTS-------------- 
+Analyze file: com.iotwear.wear.apk
+Package name: com.iotwear.wear
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App instantiates AllowAllHostnameVerifier: 
+-------------------RESULTS-------------- 
+Analyze file: com.abb.freeathome.apk
+Package name: com.abb.freeathome
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+Exported receivers: 2
+App ignores ssl error: 
+-------------------RESULTS-------------- 
+Analyze file: com.devolo.homecontrol.apk
+Package name: com.devolo.homecontrol
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+-------------------RESULTS-------------- 
+Analyze file: com.abb.domustech.apk
+Package name: com.abb.domustech
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+-------------------RESULTS-------------- 
+Analyze file: com.nxcontrol.remotemini.apk
+Package name: com.nxcontrol.remotemini
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+No exported receivers
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+-------------------RESULTS-------------- 
+Analyze file: com.philips.hueswitcher.quickstart.apk
+Package name: com.philips.hueswitcher.quickstart
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+Exported receivers: 1
+App ignores ssl error: 
+-------------------RESULTS-------------- 
+Analyze file: com.customsolutions.android.alexa.apk
+Package name: com.customsolutions.android.alexa
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+Exported receivers: 2
+App instantiates AllowAllHostnameVerifier: 
+App ignores ssl error: 
+App implements custom TrustManager: 
+-------------------RESULTS-------------- 
+Analyze file: com.kaonmedia.iotmobileclient.apk
+Package name: com.kaonmedia.iotmobileclient
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+-------------------RESULTS-------------- 
+Analyze file: com.advancedquonsettechnology.hcaapp.apk
+Package name: com.advancedquonsettechnology.hcaapp
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+-------------------RESULTS-------------- 
+Analyze file: com.devicecortex.zcastle.apk
+Package name: com.devicecortex.zcastle
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+-------------------RESULTS-------------- 
+Analyze file: com.cognitial.directvremote.apk
+Package name: com.cognitial.directvremote
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 
+-------------------RESULTS-------------- 
+Analyze file: com.lightwaverf.linkplus.apk
+Package name: com.lightwaverf.linkplus
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+App implements custom HostnameVerifier: 
+-------------------RESULTS-------------- 
+Analyze file: air.com.crestron.andros.apk
+Package name: air.com.crestron.andros
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+Exported receivers: 1
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+-------------------RESULTS-------------- 
+Analyze file: com.digience.smartrental.apk
+Package name: com.digience.smartrental
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+Exported receivers: 1
+App implements custom TrustManager: 
+-------------------RESULTS-------------- 
+Analyze file: com.eques.plug.apk
+Package name: com.eques.plug
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+No exported receivers
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+-------------------RESULTS-------------- 
+Analyze file: com.bpl.homecenter.ui.apk
+Package name: com.bpl.homecenter.ui
+ 
+Suspicious Permission Use: 
+READ_CONTACTS permission use: 1
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+-------------------RESULTS-------------- 
+Analyze file: com.alarmnet.tc2.apk
+Package name: com.alarmnet.tc2
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+Exported receivers: 2
+App implements custom TrustManager: 
+-------------------RESULTS-------------- 
+Analyze file: appinventor.ai_digitalartsmind.SmartHome.apk
+Package name: appinventor.ai_digitalartsmind.SmartHome
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+-------------------RESULTS-------------- 
+Analyze file: com.comfortclick.cmclient.apk
+Package name: com.comfortclick.cmclient
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App ignores ssl error: 
+-------------------RESULTS-------------- 
+Analyze file: com.lutron.mmw.apk
+Package name: com.lutron.mmw
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+-------------------RESULTS-------------- 
+Analyze file: allterco.bg.shelly.apk
+Package name: allterco.bg.shelly
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+Exported receivers: 1
+App implements custom TrustManager: 
+-------------------RESULTS-------------- 
+Analyze file: com.anchor.anchorsmarthomes.apk
+Package name: com.anchor.anchorsmarthomes
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+-------------------RESULTS-------------- 
+Analyze file: com.logitech.circle.apk
+Package name: com.logitech.circle
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+Exported receivers: 1
+App implements custom HostnameVerifier: 
+-------------------RESULTS-------------- 
+Analyze file: com.gemicates.hagway.apk
+Package name: com.gemicates.hagway
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+-------------------RESULTS-------------- 
+Analyze file: com.activehomevista.apk
+Package name: com.activehomevista
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+-------------------RESULTS-------------- 
+Analyze file: com.kaon.android.lepton.hitachi.apk
+Package name: com.kaon.android.lepton.hitachi
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+-------------------RESULTS-------------- 
+Analyze file: com.hackajoelabs.hook.apk
+Package name: com.hackajoelabs.hook
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+-------------------RESULTS-------------- 
+Analyze file: com.cloudblocks.android.user.apk
+Package name: com.cloudblocks.android.user
+ 
+Suspicious Permission Use: 
+READ_CONTACTS permission use: 1
+No exported activities
+No exported services
+Exported receivers: 1
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+-------------------RESULTS-------------- 
+Analyze file: com.bkav.smarthome.ariel.apk
+Package name: com.bkav.smarthome.ariel
+ 
+Suspicious Permission Use: 
+READ_CONTACTS permission use: 1
+No exported activities
+No exported services
+Exported receivers: 1
+App implements custom TrustManager: 
+-------------------RESULTS-------------- 
+Analyze file: com.icontrol.centurylink.apk
+Package name: com.icontrol.centurylink
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+-------------------RESULTS-------------- 
+Analyze file: com.eezy.app.apk
+Package name: com.eezy.app
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 2
+-------------------RESULTS-------------- 
+Analyze file: com.rcreations.ipcamviewerBasic.apk
+Package name: com.rcreations.ipcamviewerBasic
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+No exported receivers
+App ignores ssl error: 
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+-------------------RESULTS-------------- 
+Analyze file: com.google.android.tv.remote.apk
+Package name: com.google.android.tv.remote
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 

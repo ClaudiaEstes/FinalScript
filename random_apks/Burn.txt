@@ -1,0 +1,8 @@
+Analyze file: com.synapse.android.burn.apk
+Package name: com.synapse.android.burn
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/monolithic/sdk/impl/iy;checkServerTrustedLcom/flurry/android/monolithic/sdk/impl/iy;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x16941cLjava/lang/Object;->Lcom/flurry/android/monolithic/sdk/impl/iy;

@@ -1,0 +1,6 @@
+Analyze file: com.aceviral.speedboat.apk
+Package name: com.aceviral.speedboat
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 

@@ -1,0 +1,6 @@
+Analyze file: com.alonsoruibal.chessdroid.lite.apk
+Package name: com.alonsoruibal.chessdroid.lite
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 

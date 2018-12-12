@@ -1,0 +1,14 @@
+-------------------RESULTS-------------- 
+Analyze file: com.iot.engine.apk
+Package name: com.iot.engine
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+com.iot.engine Exported receiver intent filter 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLSession/Constants$1;checkServerTrustedLSession/Constants$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x11eb58Ljava/lang/Object;->LSession/Constants$1;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLSession/Constants$2;LSession/Constants$2;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x11eb98Ljava/lang/Object;->LSession/Constants$2;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/squareup/okhttp/internal/tls/OkHostnameVerifier;Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z [access_flags=public] @ 0x2e7af4Ljava/lang/Object;->Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/squareup/okhttp/internal/tls/OkHostnameVerifier;Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x2e7b24Ljava/lang/Object;->Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

@@ -1,0 +1,10 @@
+-------------------RESULTS-------------- 
+Analyze file: com.abode.abode.apk
+Package name: com.abode.abode
+ 
+Suspicious Permission Use: 
+READ_CONTACTS permission used 
+com.abode.abode Exported receiver intent filter 
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLokhttp3/internal/tls/OkHostnameVerifier;Lokhttp3/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z [access_flags=public] @ 0x21f2b0Ljava/lang/Object;->Lokhttp3/internal/tls/OkHostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLokhttp3/internal/tls/OkHostnameVerifier;Lokhttp3/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x21f2e0Ljava/lang/Object;->Lokhttp3/internal/tls/OkHostnameVerifier;

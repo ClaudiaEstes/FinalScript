@@ -1,0 +1,16 @@
+-------------------RESULTS-------------- 
+Analyze file: air.com.crestron.andros.apk
+Package name: air.com.crestron.andros
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+com.crestron.mobile.core3 Exported receiver intent filter 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/crestron/http/conn/ssl/TrustManagerDecorator;checkServerTrustedLcom/crestron/http/conn/ssl/TrustManagerDecorator;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x213740Ljava/lang/Object;->Lcom/crestron/http/conn/ssl/TrustManagerDecorator;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/crestron/mobile/net/android/TrustAllSSLSocketFactory$1;checkServerTrustedLcom/crestron/mobile/net/android/TrustAllSSLSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x26de6cLjava/lang/Object;->Lcom/crestron/mobile/net/android/TrustAllSSLSocketFactory$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLorg/apache/commons/net/ftp/FTPSTrustManager;checkServerTrustedLorg/apache/commons/net/ftp/FTPSTrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x3a5db4Ljava/lang/Object;->Lorg/apache/commons/net/ftp/FTPSTrustManager;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/crestron/http/conn/ssl/X509HostnameVerifier;Lcom/crestron/http/conn/ssl/X509HostnameVerifier;->verify(Ljava/lang/String; Ljava/security/cert/X509Certificate;)V [access_flags=public abstract] @ 0x0Ljava/lang/Object;->Lcom/crestron/http/conn/ssl/X509HostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/crestron/http/conn/ssl/X509HostnameVerifier;Lcom/crestron/http/conn/ssl/X509HostnameVerifier;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSocket;)V [access_flags=public abstract] @ 0x0Ljava/lang/Object;->Lcom/crestron/http/conn/ssl/X509HostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/crestron/http/conn/ssl/X509HostnameVerifier;Lcom/crestron/http/conn/ssl/X509HostnameVerifier;->verify(Ljava/lang/String; [Ljava/lang/String; [Ljava/lang/String;)V [access_flags=public abstract] @ 0x0Ljava/lang/Object;->Lcom/crestron/http/conn/ssl/X509HostnameVerifier;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

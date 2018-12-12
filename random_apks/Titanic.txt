@@ -1,0 +1,8 @@
+Analyze file: com.freshgames.escapethetitanic.apk
+Package name: com.freshgames.escapethetitanic
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/monolithic/sdk/impl/iy;checkServerTrustedLcom/flurry/android/monolithic/sdk/impl/iy;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x70898Ljava/lang/Object;->Lcom/flurry/android/monolithic/sdk/impl/iy;

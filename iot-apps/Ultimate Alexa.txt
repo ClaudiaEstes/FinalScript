@@ -1,0 +1,14 @@
+-------------------RESULTS-------------- 
+Analyze file: com.customsolutions.android.alexa.apk
+Package name: com.customsolutions.android.alexa
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+android.intent.category.DEFAULT Exported receiver intent filter 
+com.customsolutions.android.alexa Exported receiver intent filter 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated innewSslSocketFactoryLorg/apache/http/impl/client/DefaultHttpClient;->Lcom/amazon/identity/auth/device/endpoint/AbstractPandaRequest$UnsafeSslHttpClient;Lcom/amazon/identity/auth/device/endpoint/AbstractPandaRequest$UnsafeSslHttpClient;->newSslSocketFactory()Lorg/apache/http/conn/ssl/SSLSocketFactory; [access_flags=private] @ 0x2c00e4
+App ignores ssl error: 
+	Custom ssl error handler inonReceivedSslErrorLcom/facebook/ads/internal/view/b/a$3;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0x336e84Landroid/webkit/WebViewClient;->Lcom/facebook/ads/internal/view/b/a$3;
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/amazon/identity/auth/device/endpoint/AbstractPandaRequest$UnsafeSslHttpClient$MySSLSocketFactory$1;checkServerTrustedLcom/amazon/identity/auth/device/endpoint/AbstractPandaRequest$UnsafeSslHttpClient$MySSLSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x2c0000Ljava/lang/Object;->Lcom/amazon/identity/auth/device/endpoint/AbstractPandaRequest$UnsafeSslHttpClient$MySSLSocketFactory$1;

@@ -1,0 +1,514 @@
+Analyze file: com.freshgames.escapethetitanic.apk
+Package name: com.freshgames.escapethetitanic
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+Analyze file: com.ga.anyemulatorgame.apk
+Package name: com.ga.anyemulatorgame
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+Analyze file: com.com2us.homerunbattle2.normal.freefull.google.global.android.common.apk
+Package name: com.com2us.homerunbattle2.normal.freefull.google.global.android.common
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 2
+App instantiates AllowAllHostnameVerifier: 
+App ignores ssl error: 
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+Analyze file: com.sixwaves.crosswordpop.apk
+Package name: com.sixwaves.crosswordpop
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+App implements custom TrustManager: 
+Analyze file: com.aceviral.speedboat.apk
+Package name: com.aceviral.speedboat
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+Analyze file: com.navyduck.creeperdefense.apk
+Package name: com.navyduck.creeperdefense
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+Analyze file: co.kr.medialog.swatandzombie.apk
+Package name: co.kr.medialog.swatandzombie
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+Analyze file: com.mathopen.androidmath.apk
+Package name: com.mathopen.androidmath
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+Analyze file: com.voldaran.puzzle.graBLOX.apk
+Package name: com.voldaran.puzzle.graBLOX
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+Analyze file: com.glu.android.zombsniper.apk
+Package name: com.glu.android.zombsniper
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+App implements custom TrustManager: 
+Analyze file: com.rubicon.dev.yachty.apk
+Package name: com.rubicon.dev.yachty
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+Analyze file: com.oxothuk.worldpuzzle.apk
+Package name: com.oxothuk.worldpuzzle
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App ignores ssl error: 
+Analyze file: air.pokemonquiz.apk
+Package name: air.pokemonquiz
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+Analyze file: com.EgyptReelsOfLuxor.gold.apk
+Package name: com.EgyptReelsOfLuxor.gold
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+Analyze file: com.ezjoynetwork.jewelsmaze.apk
+Package name: com.ezjoynetwork.jewelsmaze
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+Analyze file: newmatching.mickey.mouse.fun.play.apk
+Package name: newmatching.mickey.mouse.fun.play
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+Analyze file: com.candy.givemespirit.apk
+Package name: com.candy.givemespirit
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+No exported receivers
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+Analyze file: com.sibforce.bubbleblast.apk
+Package name: com.sibforce.bubbleblast
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 
+Analyze file: com.geekbeach.spacegame.apk
+Package name: com.geekbeach.spacegame
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+App implements custom TrustManager: 
+Analyze file: com.kristanix.android.dominosolitaire.apk
+Package name: com.kristanix.android.dominosolitaire
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App ignores ssl error: 
+Analyze file: com.tobiapps.android_hiddenobjects.apk
+Package name: com.tobiapps.android_hiddenobjects
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 
+Analyze file: air.com.metagu.RewardHunterA800.apk
+Package name: air.com.metagu.RewardHunterA800
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App ignores ssl error: 
+App implements custom TrustManager: 
+Analyze file: whats.the.saying.quiz.apk
+Package name: whats.the.saying.quiz
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+Analyze file: me.zed_0xff.android.alchemy.apk
+Package name: me.zed_0xff.android.alchemy
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+Analyze file: com.alonsoruibal.chessdroid.lite.apk
+Package name: com.alonsoruibal.chessdroid.lite
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+Analyze file: com.ensenasoft.mahjongdlxf.apk
+Package name: com.ensenasoft.mahjongdlxf
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 
+Analyze file: com.gamecircus.PrizeClaw.apk
+Package name: com.gamecircus.PrizeClaw
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+Analyze file: com.angryheroesgame.halloween.apk
+Package name: com.angryheroesgame.halloween
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+Exported services: 1
+No exported receivers
+Analyze file: com.memory.activity.apk
+Package name: com.memory.activity
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+Analyze file: com.fgol.shark3.apk
+Package name: com.fgol.shark3
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+Analyze file: com.rovio.angrybirdsstarwarsii.ads.apk
+Package name: com.rovio.angrybirdsstarwarsii.ads
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+App instantiates AllowAllHostnameVerifier: 
+App ignores ssl error: 
+App implements custom TrustManager: 
+Analyze file: sts.dl.apk
+Package name: sts.dl
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 2
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 
+Analyze file: com.gamesforfriends.icomania.apk
+Package name: com.gamesforfriends.icomania
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+Analyze file: ru.mail.games.android.JungleHeat.apk
+Package name: ru.mail.games.android.JungleHeat
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App instantiates AllowAllHostnameVerifier: 
+App ignores ssl error: 
+App implements custom TrustManager: 
+Analyze file: com.synapse.android.burn.apk
+Package name: com.synapse.android.burn
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+Analyze file: com.madfingergames.deadzone.apk
+Package name: com.madfingergames.deadzone
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+RECORD_AUDIO permission use: 1
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+Analyze file: jp.co.a_tm.wol.en.apk
+Package name: jp.co.a_tm.wol.en
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 
+Analyze file: com.bgames.android.bikerun.apk
+Package name: com.bgames.android.bikerun
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+App implements custom TrustManager: 
+Analyze file: air.com.generamobile.colormaniaguess.apk
+Package name: air.com.generamobile.colormaniaguess
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+App ignores ssl error: 
+App implements custom TrustManager: 
+Analyze file: com.feelingtouch.gnz.realistic.apk
+Package name: com.feelingtouch.gnz.realistic
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+Exported receivers: 1
+App implements custom TrustManager: 
+Analyze file: com.yourislandcraft.demo.lifeincproduction.apk
+Package name: com.yourislandcraft.demo.lifeincproduction
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+Analyze file: de.habanero.quizoid.apk
+Package name: de.habanero.quizoid
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+Analyze file: com.kabam.fortress.apk
+Package name: com.kabam.fortress
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 
+Analyze file: com.innovativeGames.archery.apk
+Package name: com.innovativeGames.archery
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App ignores ssl error: 
+App implements custom TrustManager: 
+Analyze file: com.mindgames.ak.aj.iqtestwithanswers.apk
+Package name: com.mindgames.ak.aj.iqtestwithanswers
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App ignores ssl error: 
+Analyze file: com.blitwise.ptankshd.apk
+Package name: com.blitwise.ptankshd
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+Analyze file: com.baringsprod.numbersAddict.free.gp.apk
+Package name: com.baringsprod.numbersAddict.free.gp
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 
+Analyze file: uk.co.aifactory.gofree.apk
+Package name: uk.co.aifactory.gofree
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+Analyze file: com.distinctdev.tmtlite2.apk
+Package name: com.distinctdev.tmtlite2
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+Analyze file: com.niasoft.alchemyclassichd.apk
+Package name: com.niasoft.alchemyclassichd
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+No exported activities
+No exported services
+No exported receivers
+App implements custom TrustManager: 
+App implements custom HostnameVerifier: 
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites. 

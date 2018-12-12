@@ -1,0 +1,9 @@
+Analyze file: /Users/solivialeonvitervo/Documents/FinalScript/random_apks/com.com2us.homerunbattle2.normal.freefull.google.global.android.common.apk
+Package name: com.com2us.homerunbattle2.normal.freefull.google.global.android.common
+Suspicious Permission Use: 
+No suspicious permissions in use 
+com.com2us.homerunbattle2.normal.freefull.google.global.android.common Exported receiver intent filter 
+com.com2us.homerunbattle2.normal.freefull.google.global.android.common Exported receiver intent filter 
+App instantiates AllowAllHostnameVerifier: 
+App implements custom TrustManager: 
+App implements custom TrustManager: 

@@ -1,0 +1,6 @@
+-------------------RESULTS-------------- 
+Analyze file: com.logitech.harmonyhub.apk
+Package name: com.logitech.harmonyhub
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 

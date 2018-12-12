@@ -1,0 +1,6 @@
+Analyze file: de.habanero.quizoid.apk
+Package name: de.habanero.quizoid
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 

@@ -1,0 +1,7 @@
+-------------------RESULTS-------------- 
+Analyze file: com.ivideon.client.apk
+Package name: com.ivideon.client
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+com.ivideon.client Exported receiver intent filter 

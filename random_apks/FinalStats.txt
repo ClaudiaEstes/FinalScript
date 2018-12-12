@@ -1,0 +1,11 @@
+For apps examined: 
+Apps with exported activities: 0
+Apps with exported services: 1
+Apps with exported receivers: 12
+Apps using RECORD_AUDIO permission: 3
+Apps using READ_CONTACTS permission: 0
+Apps using READ_CALENDAR permission: 0
+Apps with hostname verification issues 14
+Apps with SSL pining ( ignoring ssl erros)problems/allowallhostnameverifier: 20
+Apps with certificate verification issues: 30
+Total number of apps reviewed: 50

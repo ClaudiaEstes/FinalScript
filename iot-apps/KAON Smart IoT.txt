@@ -1,0 +1,17 @@
+-------------------RESULTS-------------- 
+Analyze file: com.kaonmedia.iotmobileclient.apk
+Package name: com.kaonmedia.iotmobileclient
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+com.kaonmedia.iotmobileclient Exported receiver intent filter 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/kaonmedia/iotmobileclient/common/HTTPConnectionHelper$1;checkServerTrustedLcom/kaonmedia/iotmobileclient/common/HTTPConnectionHelper$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x184490Ljava/lang/Object;->Lcom/kaonmedia/iotmobileclient/common/HTTPConnectionHelper$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/loopj/android/http/MySSLSocketFactory$1;checkServerTrustedLcom/loopj/android/http/MySSLSocketFactory$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x187b60Ljava/lang/Object;->Lcom/loopj/android/http/MySSLSocketFactory$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcz/msebera/android/httpclient/conn/ssl/SSLContextBuilder$TrustManagerDelegate;checkServerTrustedLcz/msebera/android/httpclient/conn/ssl/SSLContextBuilder$TrustManagerDelegate;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x18fb00Ljava/lang/Object;->Lcz/msebera/android/httpclient/conn/ssl/SSLContextBuilder$TrustManagerDelegate;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/kaonmedia/iotmobileclient/common/HTTPConnectionHelper$TrustAllHostName;Lcom/kaonmedia/iotmobileclient/common/HTTPConnectionHelper$TrustAllHostName;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x1844d4Ljava/lang/Object;->Lcom/kaonmedia/iotmobileclient/common/HTTPConnectionHelper$TrustAllHostName;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcz/msebera/android/httpclient/conn/ssl/X509HostnameVerifier;Lcz/msebera/android/httpclient/conn/ssl/X509HostnameVerifier;->verify(Ljava/lang/String; Ljava/security/cert/X509Certificate;)V [access_flags=public abstract] @ 0x0Ljava/lang/Object;->Lcz/msebera/android/httpclient/conn/ssl/X509HostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcz/msebera/android/httpclient/conn/ssl/X509HostnameVerifier;Lcz/msebera/android/httpclient/conn/ssl/X509HostnameVerifier;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSocket;)V [access_flags=public abstract] @ 0x0Ljava/lang/Object;->Lcz/msebera/android/httpclient/conn/ssl/X509HostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcz/msebera/android/httpclient/conn/ssl/X509HostnameVerifier;Lcz/msebera/android/httpclient/conn/ssl/X509HostnameVerifier;->verify(Ljava/lang/String; [Ljava/lang/String; [Ljava/lang/String;)V [access_flags=public abstract] @ 0x0Ljava/lang/Object;->Lcz/msebera/android/httpclient/conn/ssl/X509HostnameVerifier;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

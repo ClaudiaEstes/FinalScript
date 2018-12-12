@@ -1,0 +1,11 @@
+Analyze file: com.mathopen.androidmath.apk
+Package name: com.mathopen.androidmath
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/phonegap/FileTransfer$2;checkServerTrustedLcom/phonegap/FileTransfer$2;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0xdfc8Ljava/lang/Object;->Lcom/phonegap/FileTransfer$2;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/phonegap/FileTransfer$1;Lcom/phonegap/FileTransfer$1;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0xdf84Ljava/lang/Object;->Lcom/phonegap/FileTransfer$1;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

@@ -1,0 +1,6 @@
+Analyze file: newmatching.mickey.mouse.fun.play.apk
+Package name: newmatching.mickey.mouse.fun.play
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 

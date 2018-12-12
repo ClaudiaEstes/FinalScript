@@ -1,0 +1,25 @@
+-------------------RESULTS-------------- 
+Analyze file: com.netichome.android.cockpit.apk
+Package name: com.netichome.android.cockpit
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated in<clinit>Ljava/lang/Object;->Lorg/apache/http/conn/ssl/SSLSocketFactory;Lorg/apache/http/conn/ssl/SSLSocketFactory;-><clinit>()V [access_flags=static constructor] @ 0x10e39c
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/netichome/mobile/backend/NetworkOperation$1;checkServerTrustedLcom/netichome/mobile/backend/NetworkOperation$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0xa7274Ljava/lang/Object;->Lcom/netichome/mobile/backend/NetworkOperation$1;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLorg/apache/http/conn/ssl/TrustManagerDecorator;checkServerTrustedLorg/apache/http/conn/ssl/TrustManagerDecorator;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0xb324cLjava/lang/Object;->Lorg/apache/http/conn/ssl/TrustManagerDecorator;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLorg/apache/http/conn/ssl/X509HostnameVerifier;Lorg/apache/http/conn/ssl/X509HostnameVerifier;->verify(Ljava/lang/String; Ljava/security/cert/X509Certificate;)V [access_flags=public abstract] @ 0x0Ljava/lang/Object;->Lorg/apache/http/conn/ssl/X509HostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLorg/apache/http/conn/ssl/X509HostnameVerifier;Lorg/apache/http/conn/ssl/X509HostnameVerifier;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSocket;)V [access_flags=public abstract] @ 0x0Ljava/lang/Object;->Lorg/apache/http/conn/ssl/X509HostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLorg/apache/http/conn/ssl/X509HostnameVerifier;Lorg/apache/http/conn/ssl/X509HostnameVerifier;->verify(Ljava/lang/String; [Ljava/lang/String; [Ljava/lang/String;)V [access_flags=public abstract] @ 0x0Ljava/lang/Object;->Lorg/apache/http/conn/ssl/X509HostnameVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnames
+Lorg/apache/http/conn/ssl/AbstractVerifier;Lorg/apache/http/conn/ssl/AbstractVerifier;->verify(Ljava/lang/String; 
+Ljava/security/cert/X509Certificate;)V [access_flags=public final] @ 0xdd710Ljava/lang/Object;->Lorg/apache/http/conn/ssl/AbstractVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnames
+Lorg/apache/http/conn/ssl/AbstractVerifier;Lorg/apache/http/conn/ssl/AbstractVerifier;->verify(Ljava/lang/String; 
+Ljavax/net/ssl/SSLSocket;)V [access_flags=public final] @ 0xdd738Ljava/lang/Object;->Lorg/apache/http/conn/ssl/AbstractVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnames
+Lorg/apache/http/conn/ssl/AbstractVerifier;Lorg/apache/http/conn/ssl/AbstractVerifier;->verify(Ljava/lang/String; [Ljava/lang/String; [Ljava/lang/String; Z)V [access_flags=public final] @ 0xdd7acLjava/lang/Object;->Lorg/apache/http/conn/ssl/AbstractVerifier;
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLorg/apache/http/conn/ssl/AbstractVerifier;Lorg/apache/http/conn/ssl/AbstractVerifier;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public final] @ 0xddaa0Ljava/lang/Object;->Lorg/apache/http/conn/ssl/AbstractVerifier;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

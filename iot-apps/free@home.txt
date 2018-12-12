@@ -1,0 +1,13 @@
+-------------------RESULTS-------------- 
+Analyze file: com.abb.freeathome.apk
+Package name: com.abb.freeathome
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+com.abb.freeathome Exported receiver intent filter 
+com.abb.freeathome Exported receiver intent filter 
+App ignores ssl error: 
+	Custom ssl error handler inonReceivedSslErrorLorg/xwalk/core/XWalkResourceClient;->onReceivedSslError(Lorg/xwalk/core/XWalkView; Landroid/webkit/ValueCallback; Landroid/net/http/SslError;)V [access_flags=public] @ 0x23ef60Ljava/lang/Object;->Lorg/xwalk/core/XWalkResourceClient;
+	Custom ssl error handler inonReceivedSslErrorLorg/xwalk/core/internal/XWalkContentsClient;->onReceivedSslError(Landroid/webkit/ValueCallback; Landroid/net/http/SslError;)V [access_flags=public abstract] @ 0x0Lorg/chromium/content/browser/ContentViewClient;->Lorg/xwalk/core/internal/XWalkContentsClient;
+	Custom ssl error handler inonReceivedSslErrorLorg/xwalk/core/internal/XWalkContentsClientBridge;->onReceivedSslError(Landroid/webkit/ValueCallback; Landroid/net/http/SslError;)V [access_flags=public] @ 0x2c078cLorg/xwalk/core/internal/XWalkContentsClient;->Lorg/xwalk/core/internal/XWalkContentsClientBridge;
+	Custom ssl error handler inonReceivedSslErrorLorg/xwalk/core/internal/XWalkResourceClientInternal;->onReceivedSslError(Lorg/xwalk/core/internal/XWalkViewInternal; Landroid/webkit/ValueCallback; Landroid/net/http/SslError;)V [access_flags=public] @ 0x2c8590Ljava/lang/Object;->Lorg/xwalk/core/internal/XWalkResourceClientInternal;

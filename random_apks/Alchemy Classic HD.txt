@@ -1,0 +1,11 @@
+Analyze file: com.niasoft.alchemyclassichd.apk
+Package name: com.niasoft.alchemyclassichd
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcn/domob/android/ads/s$b;checkServerTrustedLcn/domob/android/ads/s$b;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x6830cLjava/lang/Object;->Lcn/domob/android/ads/s$b;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcn/domob/android/ads/s$a;Lcn/domob/android/ads/s$a;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x682c8Ljava/lang/Object;->Lcn/domob/android/ads/s$a;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

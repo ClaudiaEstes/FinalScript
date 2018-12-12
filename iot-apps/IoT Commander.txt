@@ -1,0 +1,9 @@
+-------------------RESULTS-------------- 
+Analyze file: au.com.mobelisk.iotcommander.apk
+Package name: au.com.mobelisk.iotcommander
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLa/a/a/a/e/d/e;checkServerTrustedLa/a/a/a/e/d/e;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x682f0Ljava/lang/Object;->La/a/a/a/e/d/e;
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/a/a/a/u;checkServerTrustedLcom/a/a/a/u;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x122838Ljava/lang/Object;->Lcom/a/a/a/u;

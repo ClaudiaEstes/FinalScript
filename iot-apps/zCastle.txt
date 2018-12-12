@@ -1,0 +1,15 @@
+-------------------RESULTS-------------- 
+Analyze file: com.devicecortex.zcastle.apk
+Package name: com.devicecortex.zcastle
+ 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+com.devicecortex.zcastle Exported receiver intent filter 
+App instantiates AllowAllHostnameVerifier: 
+	AllowAllHostnameVerifier is instantiated in
+doNotValidateCertificateLjava/lang/Object;->Lcom/google/api/client/http/apache/ApacheHttpTransport$Builder;Lcom/google/api/client/http/apache/ApacheHttpTransport$Builder;->doNotValidateCertificate()Lcom/google/api/client/http/apache/ApacheHttpTransport$Builder; [access_flags=public] @ 0x267790
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/google/api/client/util/SslUtils$1;checkServerTrustedLcom/google/api/client/util/SslUtils$1;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x2715d8Ljava/lang/Object;->Lcom/google/api/client/util/SslUtils$1;
+App implements custom HostnameVerifier: 
+	Custom HostnameVerifiers is implemented in class that incorrectly verifies hostnamesLcom/google/api/client/util/SslUtils$2;Lcom/google/api/client/util/SslUtils$2;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z [access_flags=public] @ 0x271618Ljava/lang/Object;->Lcom/google/api/client/util/SslUtils$2;
+App implements custom HostnameVerifier and TrustManager that incorrectly verifies hostnames and cerficaites.

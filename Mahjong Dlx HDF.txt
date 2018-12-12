@@ -1,0 +1,5 @@
+Analyze file: /Users/solivialeonvitervo/Documents/FinalScript/random_apks/com.ensenasoft.mahjongdlxf.apk
+Package name: com.ensenasoft.mahjongdlxf
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App instantiates AllowAllHostnameVerifier: 

@@ -1,0 +1,9 @@
+Analyze file: com.feelingtouch.gnz.realistic.apk
+Package name: com.feelingtouch.gnz.realistic
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+android.intent.category.DEFAULT Exported receiver intent filter 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/ah;checkServerTrustedLcom/flurry/android/ah;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0xdfc44Ljava/lang/Object;->Lcom/flurry/android/ah;

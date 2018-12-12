@@ -1,0 +1,9 @@
+-------------------RESULTS-------------- 
+Analyze file: com.digience.smartrental.apk
+Package name: com.digience.smartrental
+ 
+Suspicious Permission Use: 
+RECORD_AUDIO permission used 
+com.digience.smartrental Exported receiver intent filter 
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLorg/apache/http/ssl/SSLContextBuilder$TrustManagerDelegate;checkServerTrustedLorg/apache/http/ssl/SSLContextBuilder$TrustManagerDelegate;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public] @ 0x3bfca0Ljava/lang/Object;->Lorg/apache/http/ssl/SSLContextBuilder$TrustManagerDelegate;

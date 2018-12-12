@@ -1,0 +1,6 @@
+Analyze file: uk.co.aifactory.gofree.apk
+Package name: uk.co.aifactory.gofree
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 

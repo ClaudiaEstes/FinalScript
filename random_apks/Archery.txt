@@ -1,0 +1,10 @@
+Analyze file: com.innovativeGames.archery.apk
+Package name: com.innovativeGames.archery
+ 
+-------------------RESULTS-------------- 
+Suspicious Permission Use: 
+No suspicious permissions in use 
+App ignores ssl error: 
+	Custom ssl error handler inonReceivedSslErrorLme/kiip/internal/g/b;->onReceivedSslError(Landroid/webkit/WebView; Landroid/webkit/SslErrorHandler; Landroid/net/http/SslError;)V [access_flags=public] @ 0xfd060Landroid/webkit/WebViewClient;->Lme/kiip/internal/g/b;
+App implements custom TrustManager: 
+	Custom TrustManager is implemented in class that incorrectly verifies certificatesLcom/flurry/android/m;checkServerTrustedLcom/flurry/android/m;->checkServerTrusted([Ljava/security/cert/X509Certificate; Ljava/lang/String;)V [access_flags=public final] @ 0xa2f7cLjava/lang/Object;->Lcom/flurry/android/m;
